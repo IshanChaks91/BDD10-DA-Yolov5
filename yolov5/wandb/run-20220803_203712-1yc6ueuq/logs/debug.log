@@ -1,0 +1,134 @@
+2022-08-03 20:37:12,761 INFO    MainThread:38928 [wandb_setup.py:_flush():76] Configure stats pid to 38928
+2022-08-03 20:37:12,761 INFO    MainThread:38928 [wandb_setup.py:_flush():76] Loading settings from /home/ichakr2s/.config/wandb/settings
+2022-08-03 20:37:12,761 INFO    MainThread:38928 [wandb_setup.py:_flush():76] Loading settings from /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/yolov5/wandb/settings
+2022-08-03 20:37:12,761 INFO    MainThread:38928 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2022-08-03 20:37:12,761 INFO    MainThread:38928 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'yolov5/train.py', 'program': '/home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/yolov5/train.py'}
+2022-08-03 20:37:12,761 INFO    MainThread:38928 [wandb_setup.py:_flush():76] Applying login settings: {'login_timeout': 30}
+2022-08-03 20:37:12,761 INFO    MainThread:38928 [wandb_init.py:_log_setup():461] Logging user logs to /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/yolov5/wandb/run-20220803_203712-1yc6ueuq/logs/debug.log
+2022-08-03 20:37:12,761 INFO    MainThread:38928 [wandb_init.py:_log_setup():462] Logging internal logs to /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/yolov5/wandb/run-20220803_203712-1yc6ueuq/logs/debug-internal.log
+2022-08-03 20:37:12,761 INFO    MainThread:38928 [wandb_init.py:init():495] calling init triggers
+2022-08-03 20:37:12,761 INFO    MainThread:38928 [wandb_init.py:init():498] wandb.init called with sweep_config: {}
+config: {'weights': 'yolov5s6.pt', 'cfg': '', 'data': '/scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/data.yaml', 'hyp': {'lr0': 0.01, 'lrf': 0.01, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.5, 'cls_pw': 1.0, 'obj': 1.0, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0, 'copy_paste': 0.0}, 'epochs': 300, 'batch_size': 32, 'imgsz': 1280, 'rect': False, 'resume': False, 'nosave': False, 'noval': False, 'noautoanchor': False, 'noplots': False, 'evolve': None, 'bucket': '', 'cache': 'ram', 'image_weights': False, 'device': '', 'multi_scale': False, 'single_cls': False, 'optimizer': 'SGD', 'sync_bn': False, 'workers': 8, 'project': 'runs/train', 'name': 'exp', 'exist_ok': False, 'quad': False, 'cos_lr': False, 'label_smoothing': 0.0, 'patience': 100, 'freeze': [0], 'save_period': -1, 'seed': 0, 'local_rank': -1, 'entity': None, 'upload_dataset': False, 'bbox_interval': -1, 'artifact_alias': 'latest', 'save_dir': 'runs/train/exp3'}
+2022-08-03 20:37:12,761 INFO    MainThread:38928 [wandb_init.py:init():548] starting backend
+2022-08-03 20:37:12,761 INFO    MainThread:38928 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-08-03 20:37:12,772 INFO    MainThread:38928 [backend.py:ensure_launched():217] starting backend process...
+2022-08-03 20:37:12,780 INFO    MainThread:38928 [backend.py:ensure_launched():222] started backend process with pid: 39018
+2022-08-03 20:37:12,782 INFO    MainThread:38928 [wandb_init.py:init():558] backend started and connected
+2022-08-03 20:37:12,789 INFO    MainThread:38928 [wandb_init.py:init():634] updated telemetry
+2022-08-03 20:37:12,818 INFO    MainThread:38928 [wandb_init.py:init():665] communicating run to backend with 30 second timeout
+2022-08-03 20:37:14,313 INFO    MainThread:38928 [wandb_run.py:_on_init():1919] communicating current version
+2022-08-03 20:37:14,435 INFO    MainThread:38928 [wandb_run.py:_on_init():1923] got version response upgrade_message: "wandb version 0.13.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2022-08-03 20:37:14,435 INFO    MainThread:38928 [wandb_init.py:init():700] starting run threads in backend
+2022-08-03 20:37:18,736 INFO    MainThread:38928 [wandb_run.py:_console_start():1893] atexit reg
+2022-08-03 20:37:18,738 INFO    MainThread:38928 [wandb_run.py:_redirect():1766] redirect: SettingsConsole.REDIRECT
+2022-08-03 20:37:18,739 INFO    MainThread:38928 [wandb_run.py:_redirect():1771] Redirecting console.
+2022-08-03 20:37:18,743 INFO    MainThread:38928 [wandb_run.py:_redirect():1827] Redirects installed.
+2022-08-03 20:37:18,743 INFO    MainThread:38928 [wandb_init.py:init():732] run started, returning control to user process
+2022-08-03 20:37:18,754 INFO    MainThread:38928 [wandb_run.py:_config_callback():1131] config_cb None None {'data_dict': {'train': '/scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images', 'val': '/scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/valid/images', 'nc': 8, 'names': ['bicycle', 'bus', 'car', 'motorcycle', 'pedestrian', 'rider', 'train', 'truck']}}
+2022-08-03 20:38:00,112 INFO    MainThread:38928 [wandb_run.py:_atexit_cleanup():1862] got exitcode: 1
+2022-08-03 20:38:00,116 INFO    MainThread:38928 [wandb_run.py:_restore():1834] restore
+2022-08-03 20:38:02,552 INFO    MainThread:38928 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1222
+  total_bytes: 1222
+}
+
+2022-08-03 20:38:02,857 INFO    MainThread:38928 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1222
+  total_bytes: 1222
+}
+
+2022-08-03 20:38:03,512 INFO    MainThread:38928 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 1222
+  total_bytes: 13048
+}
+
+2022-08-03 20:38:03,615 INFO    MainThread:38928 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 1222
+  total_bytes: 32177
+}
+
+2022-08-03 20:38:03,726 INFO    MainThread:38928 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 1222
+  total_bytes: 32177
+}
+
+2022-08-03 20:38:03,829 INFO    MainThread:38928 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 32177
+  total_bytes: 32177
+}
+
+2022-08-03 20:38:03,932 INFO    MainThread:38928 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 32177
+  total_bytes: 32177
+}
+
+2022-08-03 20:38:04,036 INFO    MainThread:38928 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 32177
+  total_bytes: 32177
+}
+
+2022-08-03 20:38:04,139 INFO    MainThread:38928 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 32177
+  total_bytes: 32177
+}
+
+2022-08-03 20:38:04,242 INFO    MainThread:38928 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 32177
+  total_bytes: 32177
+}
+
+2022-08-03 20:38:04,846 INFO    MainThread:38928 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 32177
+  total_bytes: 32177
+}
+
+2022-08-03 20:38:05,288 INFO    MainThread:38928 [wandb_run.py:_on_finish():1991] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 32177
+  total_bytes: 32177
+}
+local_info {
+}
+
+2022-08-03 20:38:06,529 INFO    MainThread:38928 [wandb_run.py:_footer_history_summary_info():3099] rendering history
+2022-08-03 20:38:06,529 INFO    MainThread:38928 [wandb_run.py:_footer_history_summary_info():3131] rendering summary
+2022-08-03 20:38:06,539 INFO    MainThread:38928 [wandb_run.py:_footer_sync_info():3055] logging synced files

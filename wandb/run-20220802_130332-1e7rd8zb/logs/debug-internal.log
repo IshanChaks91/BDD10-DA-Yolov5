@@ -1,0 +1,694 @@
+2022-08-02 13:03:34,349 INFO    MainThread:55686 [internal.py:wandb_internal():90] W&B internal server running at pid: 55686, started at: 2022-08-02 13:03:34.348060
+2022-08-02 13:03:34,352 INFO    WriterThread:55686 [datastore.py:open_for_write():75] open: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/run-1e7rd8zb.wandb
+2022-08-02 13:03:34,358 DEBUG   SenderThread:55686 [sender.py:send():236] send: header
+2022-08-02 13:03:34,358 DEBUG   SenderThread:55686 [sender.py:send():236] send: run
+2022-08-02 13:03:34,383 INFO    SenderThread:55686 [sender.py:_maybe_setup_resume():493] checking resume status for None/train/1e7rd8zb
+2022-08-02 13:03:34,923 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: check_version
+2022-08-02 13:03:34,933 INFO    SenderThread:55686 [dir_watcher.py:__init__():216] watching files in: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files
+2022-08-02 13:03:34,934 INFO    SenderThread:55686 [sender.py:_start_run_threads():815] run started: 1e7rd8zb with start time 1659438212
+2022-08-02 13:03:34,934 DEBUG   SenderThread:55686 [sender.py:send():236] send: summary
+2022-08-02 13:03:34,935 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-08-02 13:03:34,935 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: check_version
+2022-08-02 13:03:35,016 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: run_start
+2022-08-02 13:03:35,023 DEBUG   HandlerThread:55686 [meta.py:__init__():35] meta init
+2022-08-02 13:03:35,023 DEBUG   HandlerThread:55686 [meta.py:__init__():49] meta init done
+2022-08-02 13:03:35,023 DEBUG   HandlerThread:55686 [meta.py:probe():209] probe
+2022-08-02 13:03:35,032 DEBUG   HandlerThread:55686 [meta.py:_setup_git():199] setup git
+2022-08-02 13:03:35,059 DEBUG   HandlerThread:55686 [meta.py:_setup_git():206] setup git done
+2022-08-02 13:03:35,060 DEBUG   HandlerThread:55686 [meta.py:_save_pip():53] save pip
+2022-08-02 13:03:35,062 DEBUG   HandlerThread:55686 [meta.py:_save_pip():67] save pip done
+2022-08-02 13:03:35,062 DEBUG   HandlerThread:55686 [meta.py:_save_conda():74] save conda
+2022-08-02 13:03:35,939 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/requirements.txt
+2022-08-02 13:03:35,939 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/wandb-summary.json
+2022-08-02 13:03:35,940 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/conda-environment.yaml
+2022-08-02 13:03:40,943 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:03:41,359 DEBUG   HandlerThread:55686 [meta.py:_save_conda():84] save conda done
+2022-08-02 13:03:41,359 DEBUG   HandlerThread:55686 [meta.py:probe():247] probe done
+2022-08-02 13:03:41,547 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:03:41,548 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:03:41,728 DEBUG   SenderThread:55686 [sender.py:send():236] send: telemetry
+2022-08-02 13:03:41,728 DEBUG   SenderThread:55686 [sender.py:send():236] send: config
+2022-08-02 13:03:41,729 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:03:41,729 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file wandb-metadata.json with policy now
+2022-08-02 13:03:41,944 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/conda-environment.yaml
+2022-08-02 13:03:41,945 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/wandb-metadata.json
+2022-08-02 13:03:42,279 INFO    Thread-11 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/idt1g4y8-wandb-metadata.json
+2022-08-02 13:03:42,946 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:03:46,965 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:03:48,968 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:03:50,970 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:03:52,972 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:03:54,974 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:03:56,731 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:03:56,731 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:03:56,976 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:03:58,979 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:04:00,982 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:04:02,984 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:04:03,915 DEBUG   SenderThread:55686 [sender.py:send():236] send: stats
+2022-08-02 13:04:05,987 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/config.yaml
+2022-08-02 13:04:06,988 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:04:08,990 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:04:10,993 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:04:11,893 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:04:11,893 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:04:14,999 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:04:17,001 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:04:19,004 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:04:21,006 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:04:23,009 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:04:25,011 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:04:27,014 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:04:27,060 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:04:27,060 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:04:29,017 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:04:31,019 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:04:34,884 DEBUG   SenderThread:55686 [sender.py:send():236] send: stats
+2022-08-02 13:04:42,236 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:04:42,236 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:04:57,611 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:04:57,612 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:05:05,802 DEBUG   SenderThread:55686 [sender.py:send():236] send: stats
+2022-08-02 13:05:12,784 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:05:12,784 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:05:27,954 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:05:27,955 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:05:36,749 DEBUG   SenderThread:55686 [sender.py:send():236] send: stats
+2022-08-02 13:05:43,131 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:05:43,132 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:05:58,309 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:05:58,310 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:06:07,704 DEBUG   SenderThread:55686 [sender.py:send():236] send: stats
+2022-08-02 13:06:13,504 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:06:13,504 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:06:28,672 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:06:28,673 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:06:38,654 DEBUG   SenderThread:55686 [sender.py:send():236] send: stats
+2022-08-02 13:06:43,844 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:06:43,844 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:06:59,008 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:06:59,009 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:07:09,607 DEBUG   SenderThread:55686 [sender.py:send():236] send: stats
+2022-08-02 13:07:14,179 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:07:14,180 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:07:27,177 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:07:29,180 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:07:29,368 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:07:29,368 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:07:31,182 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:07:33,185 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:07:35,188 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:07:37,190 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:07:39,193 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:07:41,196 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:07:43,199 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:07:44,484 DEBUG   SenderThread:55686 [sender.py:send():236] send: stats
+2022-08-02 13:07:44,551 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:07:44,552 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:07:45,202 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:07:47,204 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:07:49,207 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:07:51,210 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:07:53,212 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:07:55,215 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:07:57,217 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:07:59,220 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:07:59,734 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:07:59,734 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:08:01,223 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:03,225 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:05,228 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:07,231 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:09,233 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:11,236 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:13,239 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:15,242 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:15,484 DEBUG   SenderThread:55686 [sender.py:send():236] send: stats
+2022-08-02 13:08:16,017 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:08:16,018 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:08:17,245 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:19,248 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:21,250 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:23,253 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:25,255 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:27,258 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:29,261 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:31,192 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:08:31,192 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:08:31,263 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:33,266 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:35,268 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:37,271 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:39,273 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:41,276 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:43,279 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:45,282 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:46,378 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:08:46,378 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:08:46,544 DEBUG   SenderThread:55686 [sender.py:send():236] send: stats
+2022-08-02 13:08:47,285 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:49,287 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:51,290 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:53,293 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:55,295 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:57,297 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:08:59,300 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:01,303 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:01,547 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:09:01,548 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:09:03,306 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:05,308 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:07,311 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:09,313 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:11,316 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:13,319 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:15,322 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:16,720 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:09:16,720 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:09:17,324 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:17,495 DEBUG   SenderThread:55686 [sender.py:send():236] send: stats
+2022-08-02 13:09:19,327 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:21,330 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:23,332 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:25,335 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:27,338 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:29,340 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:31,343 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:31,916 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:09:31,917 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:09:33,346 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:35,349 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:37,351 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:39,354 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:41,357 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:43,360 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:45,362 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:47,094 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:09:47,094 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:09:47,365 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:48,510 DEBUG   SenderThread:55686 [sender.py:send():236] send: stats
+2022-08-02 13:09:49,368 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:51,371 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:53,373 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:55,376 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:57,378 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:09:59,381 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:01,383 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:02,268 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:10:02,268 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:10:03,386 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:05,389 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:07,391 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:09,394 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:11,397 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:13,400 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:15,403 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:17,405 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:17,450 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:10:17,450 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:10:19,408 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:19,508 DEBUG   SenderThread:55686 [sender.py:send():236] send: stats
+2022-08-02 13:10:21,411 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:23,414 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:25,416 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:27,419 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:29,421 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:31,423 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:32,614 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:10:32,615 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:10:33,426 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:35,428 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:37,432 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:40,436 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:42,438 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:44,441 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:46,444 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:47,828 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:10:47,829 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:10:48,446 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:50,449 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:50,487 DEBUG   SenderThread:55686 [sender.py:send():236] send: stats
+2022-08-02 13:10:52,451 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:54,454 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:56,456 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:10:58,459 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:00,462 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:02,464 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:03,003 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:11:03,004 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:11:04,467 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:06,469 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:08,472 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:10,475 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:12,477 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:14,480 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:16,482 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:18,278 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:11:18,279 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:11:18,485 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:20,488 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:21,448 DEBUG   SenderThread:55686 [sender.py:send():236] send: stats
+2022-08-02 13:11:23,492 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:23,853 DEBUG   SenderThread:55686 [sender.py:send():236] send: summary
+2022-08-02 13:11:23,856 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-08-02 13:11:23,857 DEBUG   SenderThread:55686 [sender.py:send():236] send: summary
+2022-08-02 13:11:23,866 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-08-02 13:11:23,867 DEBUG   SenderThread:55686 [sender.py:send():236] send: summary
+2022-08-02 13:11:23,868 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-08-02 13:11:23,868 DEBUG   SenderThread:55686 [sender.py:send():236] send: summary
+2022-08-02 13:11:23,870 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-08-02 13:11:23,870 DEBUG   SenderThread:55686 [sender.py:send():236] send: summary
+2022-08-02 13:11:23,871 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-08-02 13:11:24,241 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,241 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/Labels_0_691d4c832bd849a806b2.jpg with policy now
+2022-08-02 13:11:24,258 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,258 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/Labels_0_61cb45ac99b12cbb594c.jpg with policy now
+2022-08-02 13:11:24,372 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,372 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/Mosaics_0_9e10c319ef1892cc451d.jpg with policy now
+2022-08-02 13:11:24,392 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,392 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/Mosaics_0_bdec4b62e9202718ccd8.jpg with policy now
+2022-08-02 13:11:24,396 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,396 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/Mosaics_0_a038048ebd3938d5c76f.jpg with policy now
+2022-08-02 13:11:24,494 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/wandb-summary.json
+2022-08-02 13:11:24,494 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Labels_0_691d4c832bd849a806b2.jpg
+2022-08-02 13:11:24,494 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Mosaics_0_a038048ebd3938d5c76f.jpg
+2022-08-02 13:11:24,495 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Mosaics_0_9e10c319ef1892cc451d.jpg
+2022-08-02 13:11:24,495 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Labels_0_61cb45ac99b12cbb594c.jpg
+2022-08-02 13:11:24,495 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Mosaics_0_bdec4b62e9202718ccd8.jpg
+2022-08-02 13:11:24,496 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images
+2022-08-02 13:11:24,496 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media
+2022-08-02 13:11:24,586 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,586 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/BoundingBoxDebugger_0_929bc091cbc762d32b0d.png with policy now
+2022-08-02 13:11:24,598 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,598 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/metadata/boxes2D/BoundingBoxDebugger_0_8aea670bd00bcd417777.boxes2D.json with policy now
+2022-08-02 13:11:24,600 DEBUG   SenderThread:55686 [sender.py:send():236] send: config
+2022-08-02 13:11:24,608 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,608 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/BoundingBoxDebugger_0_637d38222e1d1f226227.png with policy now
+2022-08-02 13:11:24,615 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,615 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/metadata/boxes2D/BoundingBoxDebugger_0_b205fef1692f6f6ea756.boxes2D.json with policy now
+2022-08-02 13:11:24,615 DEBUG   SenderThread:55686 [sender.py:send():236] send: config
+2022-08-02 13:11:24,619 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,620 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/BoundingBoxDebugger_0_0b191e9ce708b8aedea8.png with policy now
+2022-08-02 13:11:24,623 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,624 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/metadata/boxes2D/BoundingBoxDebugger_0_aacfe7608441ee5c035a.boxes2D.json with policy now
+2022-08-02 13:11:24,624 DEBUG   SenderThread:55686 [sender.py:send():236] send: config
+2022-08-02 13:11:24,634 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,635 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/BoundingBoxDebugger_0_fc42a8669b43517bbe9e.png with policy now
+2022-08-02 13:11:24,642 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,643 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/metadata/boxes2D/BoundingBoxDebugger_0_0088addf50f4ce860536.boxes2D.json with policy now
+2022-08-02 13:11:24,644 DEBUG   SenderThread:55686 [sender.py:send():236] send: config
+2022-08-02 13:11:24,644 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,645 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/BoundingBoxDebugger_0_ef647e99176097db5fbe.png with policy now
+2022-08-02 13:11:24,648 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,648 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/metadata/boxes2D/BoundingBoxDebugger_0_318f4d1e3f139932f704.boxes2D.json with policy now
+2022-08-02 13:11:24,658 DEBUG   SenderThread:55686 [sender.py:send():236] send: config
+2022-08-02 13:11:24,659 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,660 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/BoundingBoxDebugger_0_7e93aa5e7b99238635b8.png with policy now
+2022-08-02 13:11:24,662 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,662 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/metadata/boxes2D/BoundingBoxDebugger_0_51c50646f68742037930.boxes2D.json with policy now
+2022-08-02 13:11:24,663 DEBUG   SenderThread:55686 [sender.py:send():236] send: config
+2022-08-02 13:11:24,673 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,674 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/BoundingBoxDebugger_0_f82cff0844e43f042c9e.png with policy now
+2022-08-02 13:11:24,677 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,677 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/metadata/boxes2D/BoundingBoxDebugger_0_05015c8f7e2d9f623216.boxes2D.json with policy now
+2022-08-02 13:11:24,678 DEBUG   SenderThread:55686 [sender.py:send():236] send: config
+2022-08-02 13:11:24,681 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,686 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/BoundingBoxDebugger_0_384c67ca1ec4d9298e10.png with policy now
+2022-08-02 13:11:24,689 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,690 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/metadata/boxes2D/BoundingBoxDebugger_0_1a5303b4cee5d3d632a3.boxes2D.json with policy now
+2022-08-02 13:11:24,691 DEBUG   SenderThread:55686 [sender.py:send():236] send: config
+2022-08-02 13:11:24,693 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,694 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/BoundingBoxDebugger_0_ed41b1a4c8bddce0b95e.png with policy now
+2022-08-02 13:11:24,701 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,701 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/metadata/boxes2D/BoundingBoxDebugger_0_859971ede651cbca4bdc.boxes2D.json with policy now
+2022-08-02 13:11:24,702 DEBUG   SenderThread:55686 [sender.py:send():236] send: config
+2022-08-02 13:11:24,707 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,707 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/BoundingBoxDebugger_0_f243d04e6ef04b0a7270.png with policy now
+2022-08-02 13:11:24,715 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,716 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/metadata/boxes2D/BoundingBoxDebugger_0_6018384fde0622461036.boxes2D.json with policy now
+2022-08-02 13:11:24,717 DEBUG   SenderThread:55686 [sender.py:send():236] send: config
+2022-08-02 13:11:24,720 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,720 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/BoundingBoxDebugger_0_74c79a3572d4343af715.png with policy now
+2022-08-02 13:11:24,727 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,727 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/metadata/boxes2D/BoundingBoxDebugger_0_2c4e5b65f3cad7079f1c.boxes2D.json with policy now
+2022-08-02 13:11:24,729 DEBUG   SenderThread:55686 [sender.py:send():236] send: config
+2022-08-02 13:11:24,731 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,732 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/BoundingBoxDebugger_0_51c28a214961de6958aa.png with policy now
+2022-08-02 13:11:24,743 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,743 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/metadata/boxes2D/BoundingBoxDebugger_0_b5e2c589b035c9551125.boxes2D.json with policy now
+2022-08-02 13:11:24,746 DEBUG   SenderThread:55686 [sender.py:send():236] send: config
+2022-08-02 13:11:24,750 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,750 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/BoundingBoxDebugger_0_0053b4f3ce202b59929a.png with policy now
+2022-08-02 13:11:24,757 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,758 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/metadata/boxes2D/BoundingBoxDebugger_0_8b551238743b71bd7bd7.boxes2D.json with policy now
+2022-08-02 13:11:24,760 DEBUG   SenderThread:55686 [sender.py:send():236] send: config
+2022-08-02 13:11:24,760 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,761 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/BoundingBoxDebugger_0_a0f0497eb11fd46af19c.png with policy now
+2022-08-02 13:11:24,771 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,772 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/metadata/boxes2D/BoundingBoxDebugger_0_7730271a1d1dadf184e2.boxes2D.json with policy now
+2022-08-02 13:11:24,772 DEBUG   SenderThread:55686 [sender.py:send():236] send: config
+2022-08-02 13:11:24,773 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,773 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/BoundingBoxDebugger_0_71e7c6c27ff61df4bf82.png with policy now
+2022-08-02 13:11:24,781 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,782 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/metadata/boxes2D/BoundingBoxDebugger_0_f933d3758f3fbfe8dcac.boxes2D.json with policy now
+2022-08-02 13:11:24,784 DEBUG   SenderThread:55686 [sender.py:send():236] send: config
+2022-08-02 13:11:24,785 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,785 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/BoundingBoxDebugger_0_769f4b8bf29f67ede17a.png with policy now
+2022-08-02 13:11:24,787 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:11:24,787 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/metadata/boxes2D/BoundingBoxDebugger_0_4a4da11a60b40321b260.boxes2D.json with policy now
+2022-08-02 13:11:24,788 DEBUG   SenderThread:55686 [sender.py:send():236] send: config
+2022-08-02 13:11:24,845 INFO    Thread-13 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/bsmyvltd-media/images/Labels_0_61cb45ac99b12cbb594c.jpg
+2022-08-02 13:11:25,038 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: partial_history
+2022-08-02 13:11:25,045 DEBUG   SenderThread:55686 [sender.py:send():236] send: history
+2022-08-02 13:11:25,046 DEBUG   SenderThread:55686 [sender.py:send():236] send: summary
+2022-08-02 13:11:25,052 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-08-02 13:11:25,087 INFO    Thread-14 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/34ekkfhj-media/images/Mosaics_0_9e10c319ef1892cc451d.jpg
+2022-08-02 13:11:25,113 INFO    Thread-12 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/2gsan9ww-media/images/Labels_0_691d4c832bd849a806b2.jpg
+2022-08-02 13:11:25,197 INFO    Thread-15 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/3lm9qj6l-media/images/Mosaics_0_bdec4b62e9202718ccd8.jpg
+2022-08-02 13:11:25,214 INFO    Thread-16 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/3u7tcu4h-media/images/Mosaics_0_a038048ebd3938d5c76f.jpg
+2022-08-02 13:11:25,226 INFO    Thread-18 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/plkglbql-media/metadata/boxes2D/BoundingBoxDebugger_0_8aea670bd00bcd417777.boxes2D.json
+2022-08-02 13:11:25,322 INFO    Thread-21 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/2vef8sos-media/images/BoundingBoxDebugger_0_0b191e9ce708b8aedea8.png
+2022-08-02 13:11:25,367 INFO    Thread-26 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/39iqaybe-media/metadata/boxes2D/BoundingBoxDebugger_0_318f4d1e3f139932f704.boxes2D.json
+2022-08-02 13:11:25,376 INFO    Thread-20 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/185mjk5r-media/metadata/boxes2D/BoundingBoxDebugger_0_b205fef1692f6f6ea756.boxes2D.json
+2022-08-02 13:11:25,398 INFO    Thread-22 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/2cm1usdy-media/metadata/boxes2D/BoundingBoxDebugger_0_aacfe7608441ee5c035a.boxes2D.json
+2022-08-02 13:11:25,412 INFO    Thread-28 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/301j69dy-media/metadata/boxes2D/BoundingBoxDebugger_0_51c50646f68742037930.boxes2D.json
+2022-08-02 13:11:25,416 INFO    Thread-24 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/1fk69hvb-media/metadata/boxes2D/BoundingBoxDebugger_0_0088addf50f4ce860536.boxes2D.json
+2022-08-02 13:11:25,420 INFO    Thread-23 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/21p88pql-media/images/BoundingBoxDebugger_0_fc42a8669b43517bbe9e.png
+2022-08-02 13:11:25,424 INFO    Thread-17 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/1eizwhwz-media/images/BoundingBoxDebugger_0_929bc091cbc762d32b0d.png
+2022-08-02 13:11:25,440 INFO    Thread-31 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/35j7njnb-media/images/BoundingBoxDebugger_0_384c67ca1ec4d9298e10.png
+2022-08-02 13:11:25,470 INFO    Thread-32 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/37rfzv6x-media/metadata/boxes2D/BoundingBoxDebugger_0_1a5303b4cee5d3d632a3.boxes2D.json
+2022-08-02 13:11:25,509 INFO    Thread-34 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/1nnmmgbv-media/metadata/boxes2D/BoundingBoxDebugger_0_859971ede651cbca4bdc.boxes2D.json
+2022-08-02 13:11:25,523 INFO    Thread-38 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/25b8i7mz-media/metadata/boxes2D/BoundingBoxDebugger_0_2c4e5b65f3cad7079f1c.boxes2D.json
+2022-08-02 13:11:25,525 INFO    Thread-19 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/3hy3tf41-media/images/BoundingBoxDebugger_0_637d38222e1d1f226227.png
+2022-08-02 13:11:25,544 INFO    Thread-30 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/3evj602k-media/metadata/boxes2D/BoundingBoxDebugger_0_05015c8f7e2d9f623216.boxes2D.json
+2022-08-02 13:11:25,549 INFO    Thread-42 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/2tqvy5s6-media/metadata/boxes2D/BoundingBoxDebugger_0_8b551238743b71bd7bd7.boxes2D.json
+2022-08-02 13:11:25,582 INFO    Thread-40 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/36fnaryl-media/metadata/boxes2D/BoundingBoxDebugger_0_b5e2c589b035c9551125.boxes2D.json
+2022-08-02 13:11:25,606 INFO    Thread-25 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/3dr4zvcf-media/images/BoundingBoxDebugger_0_ef647e99176097db5fbe.png
+2022-08-02 13:11:25,630 INFO    Thread-41 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/ifdp6s29-media/images/BoundingBoxDebugger_0_0053b4f3ce202b59929a.png
+2022-08-02 13:11:25,715 INFO    Thread-46 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/vrsgru8o-media/metadata/boxes2D/BoundingBoxDebugger_0_f933d3758f3fbfe8dcac.boxes2D.json
+2022-08-02 13:11:25,766 INFO    Thread-33 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/2wg3j7w6-media/images/BoundingBoxDebugger_0_ed41b1a4c8bddce0b95e.png
+2022-08-02 13:11:25,769 INFO    Thread-37 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/14dlzs1l-media/images/BoundingBoxDebugger_0_74c79a3572d4343af715.png
+2022-08-02 13:11:25,772 INFO    Thread-39 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/2b8a7hb6-media/images/BoundingBoxDebugger_0_51c28a214961de6958aa.png
+2022-08-02 13:11:25,777 INFO    Thread-44 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/2agqp7lj-media/metadata/boxes2D/BoundingBoxDebugger_0_7730271a1d1dadf184e2.boxes2D.json
+2022-08-02 13:11:25,780 INFO    Thread-35 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/2yjm0vsb-media/images/BoundingBoxDebugger_0_f243d04e6ef04b0a7270.png
+2022-08-02 13:11:25,785 INFO    Thread-48 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/8a4d6e2h-media/metadata/boxes2D/BoundingBoxDebugger_0_4a4da11a60b40321b260.boxes2D.json
+2022-08-02 13:11:25,790 INFO    Thread-43 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/3r60ut7q-media/images/BoundingBoxDebugger_0_a0f0497eb11fd46af19c.png
+2022-08-02 13:11:25,793 INFO    Thread-29 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/rzp4lcg3-media/images/BoundingBoxDebugger_0_f82cff0844e43f042c9e.png
+2022-08-02 13:11:25,845 INFO    Thread-47 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/l0ije0wp-media/images/BoundingBoxDebugger_0_769f4b8bf29f67ede17a.png
+2022-08-02 13:11:25,889 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:25,889 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/wandb-summary.json
+2022-08-02 13:11:25,889 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_0053b4f3ce202b59929a.png
+2022-08-02 13:11:25,890 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_b5e2c589b035c9551125.boxes2D.json
+2022-08-02 13:11:25,890 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_7730271a1d1dadf184e2.boxes2D.json
+2022-08-02 13:11:25,891 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_a0f0497eb11fd46af19c.png
+2022-08-02 13:11:25,891 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_8b551238743b71bd7bd7.boxes2D.json
+2022-08-02 13:11:25,891 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_1a5303b4cee5d3d632a3.boxes2D.json
+2022-08-02 13:11:25,892 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_929bc091cbc762d32b0d.png
+2022-08-02 13:11:25,892 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_f82cff0844e43f042c9e.png
+2022-08-02 13:11:25,892 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_7e93aa5e7b99238635b8.png
+2022-08-02 13:11:25,893 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_2c4e5b65f3cad7079f1c.boxes2D.json
+2022-08-02 13:11:25,893 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_6018384fde0622461036.boxes2D.json
+2022-08-02 13:11:25,893 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_637d38222e1d1f226227.png
+2022-08-02 13:11:25,894 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_769f4b8bf29f67ede17a.png
+2022-08-02 13:11:25,894 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_8aea670bd00bcd417777.boxes2D.json
+2022-08-02 13:11:25,894 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_fc42a8669b43517bbe9e.png
+2022-08-02 13:11:25,895 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_71e7c6c27ff61df4bf82.png
+2022-08-02 13:11:25,895 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_ef647e99176097db5fbe.png
+2022-08-02 13:11:25,895 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_384c67ca1ec4d9298e10.png
+2022-08-02 13:11:25,895 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_b205fef1692f6f6ea756.boxes2D.json
+2022-08-02 13:11:25,896 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_05015c8f7e2d9f623216.boxes2D.json
+2022-08-02 13:11:25,896 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_4a4da11a60b40321b260.boxes2D.json
+2022-08-02 13:11:25,896 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_318f4d1e3f139932f704.boxes2D.json
+2022-08-02 13:11:25,897 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_74c79a3572d4343af715.png
+2022-08-02 13:11:25,897 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_ed41b1a4c8bddce0b95e.png
+2022-08-02 13:11:25,897 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_0b191e9ce708b8aedea8.png
+2022-08-02 13:11:25,897 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_859971ede651cbca4bdc.boxes2D.json
+2022-08-02 13:11:25,898 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_f243d04e6ef04b0a7270.png
+2022-08-02 13:11:25,898 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_f933d3758f3fbfe8dcac.boxes2D.json
+2022-08-02 13:11:25,898 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_51c50646f68742037930.boxes2D.json
+2022-08-02 13:11:25,899 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_0088addf50f4ce860536.boxes2D.json
+2022-08-02 13:11:25,899 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_aacfe7608441ee5c035a.boxes2D.json
+2022-08-02 13:11:25,899 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_51c28a214961de6958aa.png
+2022-08-02 13:11:25,900 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images
+2022-08-02 13:11:25,900 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media
+2022-08-02 13:11:25,900 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D
+2022-08-02 13:11:25,900 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata
+2022-08-02 13:11:25,947 INFO    Thread-45 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/3rffuyu9-media/images/BoundingBoxDebugger_0_71e7c6c27ff61df4bf82.png
+2022-08-02 13:11:26,814 INFO    Thread-27 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/2ael7wj8-media/images/BoundingBoxDebugger_0_7e93aa5e7b99238635b8.png
+2022-08-02 13:11:27,110 INFO    Thread-36 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/23vkaiso-media/metadata/boxes2D/BoundingBoxDebugger_0_6018384fde0622461036.boxes2D.json
+2022-08-02 13:11:29,086 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:31,092 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:33,098 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:34,409 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:11:34,410 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:11:35,105 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:39,118 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:41,124 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:42,128 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/config.yaml
+2022-08-02 13:11:43,131 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:45,139 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:47,145 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:49,855 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:11:49,855 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:11:50,155 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:52,162 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:52,466 DEBUG   SenderThread:55686 [sender.py:send():236] send: stats
+2022-08-02 13:11:54,168 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:56,175 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:11:58,182 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:12:00,189 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:12:02,195 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:12:04,202 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:12:05,032 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: stop_status
+2022-08-02 13:12:05,032 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: stop_status
+2022-08-02 13:12:06,208 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:12:08,215 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:12:10,221 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:12:12,226 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:12:14,232 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:12:16,128 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: log_artifact
+2022-08-02 13:12:16,128 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: log_artifact
+2022-08-02 13:12:16,239 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:12:16,239 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Validation_1_b2627ad1045063fe356f.jpg
+2022-08-02 13:12:16,239 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Validation_1_b3ca7d6a0641169c48c8.jpg
+2022-08-02 13:12:16,240 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Validation_1_e46d5227b47cbe242279.jpg
+2022-08-02 13:12:16,240 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Validation_1_2c86e3f47c39d939aebe.jpg
+2022-08-02 13:12:16,240 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Validation_1_d5125036464d0ce07dde.jpg
+2022-08-02 13:12:16,241 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Validation_1_d097abfae22b2f17d02c.jpg
+2022-08-02 13:12:16,241 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images
+2022-08-02 13:12:16,709 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: partial_history
+2022-08-02 13:12:17,241 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Results_1_ed5dc073b1617632fa93.png
+2022-08-02 13:12:17,242 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Results_1_866be4214dd22bd1e975.png
+2022-08-02 13:12:17,242 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Results_1_5f60ee96bff2cdca2f15.png
+2022-08-02 13:12:17,243 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Results_1_bb330206cc3a5ce166b4.png
+2022-08-02 13:12:17,243 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Results_1_0e95cda47e79c5ff51b5.png
+2022-08-02 13:12:17,244 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Results_1_5377c1bdb35e5b1e1705.png
+2022-08-02 13:12:17,244 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images
+2022-08-02 13:12:18,173 INFO    Thread-50 :55686 [upload_job.py:push():96] Uploaded file /home/ichakr2s/.cache/wandb/artifacts/obj/md5/4e/be2fd6f6df7c81b283685fdd2f987b
+2022-08-02 13:12:19,105 INFO    SenderThread:55686 [sender.py:send_request_log_artifact():1009] logged artifact run_1e7rd8zb_model - {'id': 'QXJ0aWZhY3Q6MTY2NDAyMDk1', 'digest': 'b1bbe2271eb361cf747023d2d2c0b178', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI1MTQyMjk4', 'latestArtifact': None}, 'version': 'latest'}
+2022-08-02 13:12:19,106 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:12:19,106 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/Validation_1_d097abfae22b2f17d02c.jpg with policy now
+2022-08-02 13:12:19,107 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:12:19,107 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/Validation_1_b3ca7d6a0641169c48c8.jpg with policy now
+2022-08-02 13:12:19,108 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:12:19,108 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/Validation_1_b2627ad1045063fe356f.jpg with policy now
+2022-08-02 13:12:19,109 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:12:19,109 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/Validation_1_e46d5227b47cbe242279.jpg with policy now
+2022-08-02 13:12:19,109 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:12:19,110 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/Validation_1_d5125036464d0ce07dde.jpg with policy now
+2022-08-02 13:12:19,110 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:12:19,110 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/Validation_1_2c86e3f47c39d939aebe.jpg with policy now
+2022-08-02 13:12:19,111 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:12:19,111 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/Results_1_ed5dc073b1617632fa93.png with policy now
+2022-08-02 13:12:19,118 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:12:19,118 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/Results_1_5377c1bdb35e5b1e1705.png with policy now
+2022-08-02 13:12:19,119 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:12:19,120 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/Results_1_bb330206cc3a5ce166b4.png with policy now
+2022-08-02 13:12:19,120 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:12:19,121 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/Results_1_866be4214dd22bd1e975.png with policy now
+2022-08-02 13:12:19,121 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:12:19,121 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/Results_1_0e95cda47e79c5ff51b5.png with policy now
+2022-08-02 13:12:19,122 DEBUG   SenderThread:55686 [sender.py:send():236] send: files
+2022-08-02 13:12:19,122 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file media/images/Results_1_5f60ee96bff2cdca2f15.png with policy now
+2022-08-02 13:12:19,130 DEBUG   SenderThread:55686 [sender.py:send():236] send: history
+2022-08-02 13:12:19,130 DEBUG   SenderThread:55686 [sender.py:send():236] send: summary
+2022-08-02 13:12:19,133 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-08-02 13:12:19,134 DEBUG   SenderThread:55686 [sender.py:send():236] send: telemetry
+2022-08-02 13:12:19,135 DEBUG   SenderThread:55686 [sender.py:send():236] send: telemetry
+2022-08-02 13:12:19,251 INFO    Thread-7  :55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/wandb-summary.json
+2022-08-02 13:12:19,452 DEBUG   SenderThread:55686 [sender.py:send():236] send: exit
+2022-08-02 13:12:19,452 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: poll_exit
+2022-08-02 13:12:19,452 INFO    SenderThread:55686 [sender.py:send_exit():372] handling exit code: 0
+2022-08-02 13:12:19,453 INFO    SenderThread:55686 [sender.py:send_exit():374] handling runtime: 524
+2022-08-02 13:12:19,456 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-08-02 13:12:19,456 INFO    SenderThread:55686 [sender.py:send_exit():380] send defer
+2022-08-02 13:12:19,457 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: poll_exit
+2022-08-02 13:12:19,459 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: defer
+2022-08-02 13:12:19,459 INFO    HandlerThread:55686 [handler.py:handle_request_defer():163] handle defer: 0
+2022-08-02 13:12:19,460 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: defer
+2022-08-02 13:12:19,460 INFO    SenderThread:55686 [sender.py:send_request_defer():389] handle sender defer: 0
+2022-08-02 13:12:19,460 INFO    SenderThread:55686 [sender.py:transition_state():393] send defer: 1
+2022-08-02 13:12:19,461 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: defer
+2022-08-02 13:12:19,461 INFO    HandlerThread:55686 [handler.py:handle_request_defer():163] handle defer: 1
+2022-08-02 13:12:19,539 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: defer
+2022-08-02 13:12:19,539 INFO    SenderThread:55686 [sender.py:send_request_defer():389] handle sender defer: 1
+2022-08-02 13:12:19,540 INFO    SenderThread:55686 [sender.py:transition_state():393] send defer: 2
+2022-08-02 13:12:19,540 DEBUG   SenderThread:55686 [sender.py:send():236] send: stats
+2022-08-02 13:12:19,541 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: defer
+2022-08-02 13:12:19,541 INFO    HandlerThread:55686 [handler.py:handle_request_defer():163] handle defer: 2
+2022-08-02 13:12:19,542 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: defer
+2022-08-02 13:12:19,542 INFO    SenderThread:55686 [sender.py:send_request_defer():389] handle sender defer: 2
+2022-08-02 13:12:19,542 INFO    SenderThread:55686 [sender.py:transition_state():393] send defer: 3
+2022-08-02 13:12:19,542 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: defer
+2022-08-02 13:12:19,543 INFO    HandlerThread:55686 [handler.py:handle_request_defer():163] handle defer: 3
+2022-08-02 13:12:19,543 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: defer
+2022-08-02 13:12:19,543 INFO    SenderThread:55686 [sender.py:send_request_defer():389] handle sender defer: 3
+2022-08-02 13:12:19,543 INFO    SenderThread:55686 [sender.py:transition_state():393] send defer: 4
+2022-08-02 13:12:19,544 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: defer
+2022-08-02 13:12:19,544 INFO    HandlerThread:55686 [handler.py:handle_request_defer():163] handle defer: 4
+2022-08-02 13:12:19,545 DEBUG   SenderThread:55686 [sender.py:send():236] send: summary
+2022-08-02 13:12:19,548 INFO    SenderThread:55686 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-08-02 13:12:19,548 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: defer
+2022-08-02 13:12:19,549 INFO    SenderThread:55686 [sender.py:send_request_defer():389] handle sender defer: 4
+2022-08-02 13:12:19,549 INFO    SenderThread:55686 [sender.py:transition_state():393] send defer: 5
+2022-08-02 13:12:19,549 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: defer
+2022-08-02 13:12:19,549 INFO    HandlerThread:55686 [handler.py:handle_request_defer():163] handle defer: 5
+2022-08-02 13:12:19,550 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: defer
+2022-08-02 13:12:19,550 INFO    SenderThread:55686 [sender.py:send_request_defer():389] handle sender defer: 5
+2022-08-02 13:12:19,559 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: poll_exit
+2022-08-02 13:12:19,810 INFO    SenderThread:55686 [sender.py:transition_state():393] send defer: 6
+2022-08-02 13:12:19,811 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: poll_exit
+2022-08-02 13:12:19,812 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: defer
+2022-08-02 13:12:19,812 INFO    HandlerThread:55686 [handler.py:handle_request_defer():163] handle defer: 6
+2022-08-02 13:12:19,812 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: defer
+2022-08-02 13:12:19,812 INFO    SenderThread:55686 [sender.py:send_request_defer():389] handle sender defer: 6
+2022-08-02 13:12:19,812 INFO    SenderThread:55686 [dir_watcher.py:finish():353] shutting down directory watcher
+2022-08-02 13:12:19,826 INFO    Thread-53 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/3qbxxxyv-media/images/Validation_1_b2627ad1045063fe356f.jpg
+2022-08-02 13:12:19,829 INFO    Thread-58 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/1znhbjji-media/images/Results_1_5377c1bdb35e5b1e1705.png
+2022-08-02 13:12:19,853 INFO    Thread-56 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/3ih8uafk-media/images/Validation_1_2c86e3f47c39d939aebe.jpg
+2022-08-02 13:12:19,913 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: poll_exit
+2022-08-02 13:12:19,955 INFO    Thread-51 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/1jhyh37f-media/images/Validation_1_d097abfae22b2f17d02c.jpg
+2022-08-02 13:12:19,963 INFO    Thread-54 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/2s29q8vq-media/images/Validation_1_e46d5227b47cbe242279.jpg
+2022-08-02 13:12:19,981 INFO    Thread-52 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/390xm4il-media/images/Validation_1_b3ca7d6a0641169c48c8.jpg
+2022-08-02 13:12:19,996 INFO    Thread-55 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/mywwjhdc-media/images/Validation_1_d5125036464d0ce07dde.jpg
+2022-08-02 13:12:20,004 INFO    Thread-62 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/2cqcxwu6-media/images/Results_1_5f60ee96bff2cdca2f15.png
+2022-08-02 13:12:20,006 INFO    Thread-59 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/q1183uqv-media/images/Results_1_bb330206cc3a5ce166b4.png
+2022-08-02 13:12:20,030 INFO    Thread-57 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/1w77snra-media/images/Results_1_ed5dc073b1617632fa93.png
+2022-08-02 13:12:20,036 INFO    Thread-61 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/2tqn8cx7-media/images/Results_1_0e95cda47e79c5ff51b5.png
+2022-08-02 13:12:20,048 INFO    Thread-60 :55686 [upload_job.py:push():138] Uploaded file /tmp/tmpelgc4402wandb/2bola710-media/images/Results_1_866be4214dd22bd1e975.png
+2022-08-02 13:12:20,258 INFO    SenderThread:55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:12:20,258 INFO    SenderThread:55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/wandb-summary.json
+2022-08-02 13:12:20,258 INFO    SenderThread:55686 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/config.yaml
+2022-08-02 13:12:20,259 INFO    SenderThread:55686 [dir_watcher.py:finish():383] scan: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files
+2022-08-02 13:12:20,259 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/config.yaml config.yaml
+2022-08-02 13:12:20,260 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/wandb-summary.json wandb-summary.json
+2022-08-02 13:12:20,266 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/requirements.txt requirements.txt
+2022-08-02 13:12:20,268 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/conda-environment.yaml conda-environment.yaml
+2022-08-02 13:12:20,283 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log output.log
+2022-08-02 13:12:20,289 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/wandb-metadata.json wandb-metadata.json
+2022-08-02 13:12:20,299 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Labels_0_691d4c832bd849a806b2.jpg media/images/Labels_0_691d4c832bd849a806b2.jpg
+2022-08-02 13:12:20,299 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Labels_0_61cb45ac99b12cbb594c.jpg media/images/Labels_0_61cb45ac99b12cbb594c.jpg
+2022-08-02 13:12:20,300 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Mosaics_0_9e10c319ef1892cc451d.jpg media/images/Mosaics_0_9e10c319ef1892cc451d.jpg
+2022-08-02 13:12:20,300 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Mosaics_0_bdec4b62e9202718ccd8.jpg media/images/Mosaics_0_bdec4b62e9202718ccd8.jpg
+2022-08-02 13:12:20,300 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Mosaics_0_a038048ebd3938d5c76f.jpg media/images/Mosaics_0_a038048ebd3938d5c76f.jpg
+2022-08-02 13:12:20,300 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_929bc091cbc762d32b0d.png media/images/BoundingBoxDebugger_0_929bc091cbc762d32b0d.png
+2022-08-02 13:12:20,300 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_637d38222e1d1f226227.png media/images/BoundingBoxDebugger_0_637d38222e1d1f226227.png
+2022-08-02 13:12:20,301 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_0b191e9ce708b8aedea8.png media/images/BoundingBoxDebugger_0_0b191e9ce708b8aedea8.png
+2022-08-02 13:12:20,301 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_fc42a8669b43517bbe9e.png media/images/BoundingBoxDebugger_0_fc42a8669b43517bbe9e.png
+2022-08-02 13:12:20,301 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_ef647e99176097db5fbe.png media/images/BoundingBoxDebugger_0_ef647e99176097db5fbe.png
+2022-08-02 13:12:20,301 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_7e93aa5e7b99238635b8.png media/images/BoundingBoxDebugger_0_7e93aa5e7b99238635b8.png
+2022-08-02 13:12:20,301 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_f82cff0844e43f042c9e.png media/images/BoundingBoxDebugger_0_f82cff0844e43f042c9e.png
+2022-08-02 13:12:20,301 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_384c67ca1ec4d9298e10.png media/images/BoundingBoxDebugger_0_384c67ca1ec4d9298e10.png
+2022-08-02 13:12:20,302 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_ed41b1a4c8bddce0b95e.png media/images/BoundingBoxDebugger_0_ed41b1a4c8bddce0b95e.png
+2022-08-02 13:12:20,302 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_f243d04e6ef04b0a7270.png media/images/BoundingBoxDebugger_0_f243d04e6ef04b0a7270.png
+2022-08-02 13:12:20,302 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_74c79a3572d4343af715.png media/images/BoundingBoxDebugger_0_74c79a3572d4343af715.png
+2022-08-02 13:12:20,302 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_51c28a214961de6958aa.png media/images/BoundingBoxDebugger_0_51c28a214961de6958aa.png
+2022-08-02 13:12:20,302 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_0053b4f3ce202b59929a.png media/images/BoundingBoxDebugger_0_0053b4f3ce202b59929a.png
+2022-08-02 13:12:20,302 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_a0f0497eb11fd46af19c.png media/images/BoundingBoxDebugger_0_a0f0497eb11fd46af19c.png
+2022-08-02 13:12:20,302 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_71e7c6c27ff61df4bf82.png media/images/BoundingBoxDebugger_0_71e7c6c27ff61df4bf82.png
+2022-08-02 13:12:20,303 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/BoundingBoxDebugger_0_769f4b8bf29f67ede17a.png media/images/BoundingBoxDebugger_0_769f4b8bf29f67ede17a.png
+2022-08-02 13:12:20,303 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Validation_1_d097abfae22b2f17d02c.jpg media/images/Validation_1_d097abfae22b2f17d02c.jpg
+2022-08-02 13:12:20,303 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Validation_1_b3ca7d6a0641169c48c8.jpg media/images/Validation_1_b3ca7d6a0641169c48c8.jpg
+2022-08-02 13:12:20,304 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Validation_1_b2627ad1045063fe356f.jpg media/images/Validation_1_b2627ad1045063fe356f.jpg
+2022-08-02 13:12:20,304 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Validation_1_e46d5227b47cbe242279.jpg media/images/Validation_1_e46d5227b47cbe242279.jpg
+2022-08-02 13:12:20,304 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Validation_1_d5125036464d0ce07dde.jpg media/images/Validation_1_d5125036464d0ce07dde.jpg
+2022-08-02 13:12:20,304 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Validation_1_2c86e3f47c39d939aebe.jpg media/images/Validation_1_2c86e3f47c39d939aebe.jpg
+2022-08-02 13:12:20,304 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Results_1_ed5dc073b1617632fa93.png media/images/Results_1_ed5dc073b1617632fa93.png
+2022-08-02 13:12:20,305 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Results_1_5377c1bdb35e5b1e1705.png media/images/Results_1_5377c1bdb35e5b1e1705.png
+2022-08-02 13:12:20,305 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Results_1_bb330206cc3a5ce166b4.png media/images/Results_1_bb330206cc3a5ce166b4.png
+2022-08-02 13:12:20,305 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Results_1_866be4214dd22bd1e975.png media/images/Results_1_866be4214dd22bd1e975.png
+2022-08-02 13:12:20,305 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Results_1_0e95cda47e79c5ff51b5.png media/images/Results_1_0e95cda47e79c5ff51b5.png
+2022-08-02 13:12:20,305 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/images/Results_1_5f60ee96bff2cdca2f15.png media/images/Results_1_5f60ee96bff2cdca2f15.png
+2022-08-02 13:12:20,306 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_8aea670bd00bcd417777.boxes2D.json media/metadata/boxes2D/BoundingBoxDebugger_0_8aea670bd00bcd417777.boxes2D.json
+2022-08-02 13:12:20,306 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_b205fef1692f6f6ea756.boxes2D.json media/metadata/boxes2D/BoundingBoxDebugger_0_b205fef1692f6f6ea756.boxes2D.json
+2022-08-02 13:12:20,307 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_aacfe7608441ee5c035a.boxes2D.json media/metadata/boxes2D/BoundingBoxDebugger_0_aacfe7608441ee5c035a.boxes2D.json
+2022-08-02 13:12:20,307 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_0088addf50f4ce860536.boxes2D.json media/metadata/boxes2D/BoundingBoxDebugger_0_0088addf50f4ce860536.boxes2D.json
+2022-08-02 13:12:20,307 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_318f4d1e3f139932f704.boxes2D.json media/metadata/boxes2D/BoundingBoxDebugger_0_318f4d1e3f139932f704.boxes2D.json
+2022-08-02 13:12:20,307 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_51c50646f68742037930.boxes2D.json media/metadata/boxes2D/BoundingBoxDebugger_0_51c50646f68742037930.boxes2D.json
+2022-08-02 13:12:20,307 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_05015c8f7e2d9f623216.boxes2D.json media/metadata/boxes2D/BoundingBoxDebugger_0_05015c8f7e2d9f623216.boxes2D.json
+2022-08-02 13:12:20,307 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_1a5303b4cee5d3d632a3.boxes2D.json media/metadata/boxes2D/BoundingBoxDebugger_0_1a5303b4cee5d3d632a3.boxes2D.json
+2022-08-02 13:12:20,307 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_859971ede651cbca4bdc.boxes2D.json media/metadata/boxes2D/BoundingBoxDebugger_0_859971ede651cbca4bdc.boxes2D.json
+2022-08-02 13:12:20,308 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_6018384fde0622461036.boxes2D.json media/metadata/boxes2D/BoundingBoxDebugger_0_6018384fde0622461036.boxes2D.json
+2022-08-02 13:12:20,308 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_2c4e5b65f3cad7079f1c.boxes2D.json media/metadata/boxes2D/BoundingBoxDebugger_0_2c4e5b65f3cad7079f1c.boxes2D.json
+2022-08-02 13:12:20,308 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_b5e2c589b035c9551125.boxes2D.json media/metadata/boxes2D/BoundingBoxDebugger_0_b5e2c589b035c9551125.boxes2D.json
+2022-08-02 13:12:20,308 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_8b551238743b71bd7bd7.boxes2D.json media/metadata/boxes2D/BoundingBoxDebugger_0_8b551238743b71bd7bd7.boxes2D.json
+2022-08-02 13:12:20,308 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_7730271a1d1dadf184e2.boxes2D.json media/metadata/boxes2D/BoundingBoxDebugger_0_7730271a1d1dadf184e2.boxes2D.json
+2022-08-02 13:12:20,309 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_f933d3758f3fbfe8dcac.boxes2D.json media/metadata/boxes2D/BoundingBoxDebugger_0_f933d3758f3fbfe8dcac.boxes2D.json
+2022-08-02 13:12:20,309 INFO    SenderThread:55686 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/media/metadata/boxes2D/BoundingBoxDebugger_0_4a4da11a60b40321b260.boxes2D.json media/metadata/boxes2D/BoundingBoxDebugger_0_4a4da11a60b40321b260.boxes2D.json
+2022-08-02 13:12:20,309 INFO    SenderThread:55686 [sender.py:transition_state():393] send defer: 7
+2022-08-02 13:12:20,310 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: poll_exit
+2022-08-02 13:12:20,311 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: defer
+2022-08-02 13:12:20,311 INFO    HandlerThread:55686 [handler.py:handle_request_defer():163] handle defer: 7
+2022-08-02 13:12:20,311 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: defer
+2022-08-02 13:12:20,311 INFO    SenderThread:55686 [sender.py:send_request_defer():389] handle sender defer: 7
+2022-08-02 13:12:20,311 INFO    SenderThread:55686 [file_pusher.py:finish():171] shutting down file pusher
+2022-08-02 13:12:20,412 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: poll_exit
+2022-08-02 13:12:20,412 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: poll_exit
+2022-08-02 13:12:20,514 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: poll_exit
+2022-08-02 13:12:20,515 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: poll_exit
+2022-08-02 13:12:20,617 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: poll_exit
+2022-08-02 13:12:20,617 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: poll_exit
+2022-08-02 13:12:20,720 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: poll_exit
+2022-08-02 13:12:20,720 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: poll_exit
+2022-08-02 13:12:20,814 INFO    Thread-63 :55686 [upload_job.py:push():138] Uploaded file /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/config.yaml
+2022-08-02 13:12:20,822 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: poll_exit
+2022-08-02 13:12:20,822 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: poll_exit
+2022-08-02 13:12:20,841 INFO    Thread-66 :55686 [upload_job.py:push():138] Uploaded file /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/conda-environment.yaml
+2022-08-02 13:12:20,849 INFO    Thread-65 :55686 [upload_job.py:push():138] Uploaded file /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/requirements.txt
+2022-08-02 13:12:20,868 INFO    Thread-64 :55686 [upload_job.py:push():138] Uploaded file /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/wandb-summary.json
+2022-08-02 13:12:20,882 INFO    Thread-67 :55686 [upload_job.py:push():138] Uploaded file /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/files/output.log
+2022-08-02 13:12:20,925 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: poll_exit
+2022-08-02 13:12:20,925 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: poll_exit
+2022-08-02 13:12:21,027 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: poll_exit
+2022-08-02 13:12:21,028 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: poll_exit
+2022-08-02 13:12:21,082 INFO    Thread-6  :55686 [sender.py:transition_state():393] send defer: 8
+2022-08-02 13:12:21,083 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: defer
+2022-08-02 13:12:21,083 INFO    HandlerThread:55686 [handler.py:handle_request_defer():163] handle defer: 8
+2022-08-02 13:12:21,084 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: defer
+2022-08-02 13:12:21,084 INFO    SenderThread:55686 [sender.py:send_request_defer():389] handle sender defer: 8
+2022-08-02 13:12:21,130 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: poll_exit
+2022-08-02 13:12:21,879 INFO    SenderThread:55686 [sender.py:transition_state():393] send defer: 9
+2022-08-02 13:12:21,879 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: poll_exit
+2022-08-02 13:12:21,881 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: defer
+2022-08-02 13:12:21,881 INFO    HandlerThread:55686 [handler.py:handle_request_defer():163] handle defer: 9
+2022-08-02 13:12:21,881 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: defer
+2022-08-02 13:12:21,881 INFO    SenderThread:55686 [sender.py:send_request_defer():389] handle sender defer: 9
+2022-08-02 13:12:21,881 INFO    SenderThread:55686 [sender.py:transition_state():393] send defer: 10
+2022-08-02 13:12:21,883 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: defer
+2022-08-02 13:12:21,883 DEBUG   SenderThread:55686 [sender.py:send():236] send: final
+2022-08-02 13:12:21,883 INFO    HandlerThread:55686 [handler.py:handle_request_defer():163] handle defer: 10
+2022-08-02 13:12:21,884 DEBUG   SenderThread:55686 [sender.py:send():236] send: footer
+2022-08-02 13:12:21,884 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: defer
+2022-08-02 13:12:21,884 INFO    SenderThread:55686 [sender.py:send_request_defer():389] handle sender defer: 10
+2022-08-02 13:12:21,982 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: poll_exit
+2022-08-02 13:12:21,982 DEBUG   SenderThread:55686 [sender.py:send_request():250] send_request: poll_exit
+2022-08-02 13:12:21,983 INFO    SenderThread:55686 [file_pusher.py:join():176] waiting for file pusher
+2022-08-02 13:12:22,248 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: sampled_history
+2022-08-02 13:12:22,251 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: get_summary
+2022-08-02 13:12:22,253 DEBUG   HandlerThread:55686 [handler.py:handle_request():140] handle_request: shutdown
+2022-08-02 13:12:22,254 INFO    HandlerThread:55686 [handler.py:finish():806] shutting down handler
+2022-08-02 13:12:22,883 INFO    WriterThread:55686 [datastore.py:close():279] close: /home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/wandb/run-20220802_130332-1e7rd8zb/run-1e7rd8zb.wandb
+2022-08-02 13:12:23,147 INFO    SenderThread:55686 [sender.py:finish():1114] shutting down sender
+2022-08-02 13:12:23,147 INFO    SenderThread:55686 [file_pusher.py:finish():171] shutting down file pusher
+2022-08-02 13:12:23,147 INFO    SenderThread:55686 [file_pusher.py:join():176] waiting for file pusher
+2022-08-02 13:12:23,149 INFO    MainThread:55686 [internal.py:handle_exit():80] Internal process exited

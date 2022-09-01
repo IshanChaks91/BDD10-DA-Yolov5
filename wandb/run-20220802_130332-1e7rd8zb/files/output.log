@@ -1,0 +1,258 @@
+YOLOv5 temporarily requires wandb version 0.12.10 or below. Some features may not work as expected.
+Overriding model.yaml nc=80 with nc=8
+                 from  n    params  module                                  arguments
+  0                -1  1      3520  models.common.Conv                      [3, 32, 6, 2, 2]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]
+  2                -1  1     18816  models.common.C3                        [64, 64, 1]
+  3                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+  4                -1  2    115712  models.common.C3                        [128, 128, 2]
+  5                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]
+  6                -1  3    625152  models.common.C3                        [256, 256, 3]
+  7                -1  1   1180672  models.common.Conv                      [256, 512, 3, 2]
+  8                -1  1   1182720  models.common.C3                        [512, 512, 1]
+  9                -1  1    656896  models.common.SPPF                      [512, 512, 5]
+ 10                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  1    361984  models.common.C3                        [512, 256, 1, False]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  1     90880  models.common.C3                        [256, 128, 1, False]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  1    296448  models.common.C3                        [256, 256, 1, False]
+ 21                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  1   1182720  models.common.C3                        [512, 512, 1, False]
+ 24      [17, 20, 23]  1     35061  models.yolo.Detect                      [8, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [128, 256, 512]]
+Model summary: 270 layers, 7041205 parameters, 7041205 gradients, 16.0 GFLOPs
+Transferred 343/349 items from yolov5s.pt
+[34m[1mAMP: [39m[22mchecks passed ✅
+Scaled weight_decay = 0.0005
+[34m[1moptimizer:[39m[22m SGD with parameter groups 57 weight (no decay), 60 weight, 60 bias
+WARNING: DP not recommended, use torch.distributed.run for best DDP Multi-GPU results.
+See Multi-GPU Tutorial at https://github.com/ultralytics/yolov5/issues/475 to get started.
+[34m[1malbumentations: [39m[22mBlur(always_apply=False, p=0.01, blur_limit=(3, 7)), MedianBlur(always_apply=False, p=0.01, blur_limit=(3, 7)), ToGray(always_apply=False, p=0.01), CLAHE(always_apply=False, p=0.01, clip_limit=(1, 4.0), tile_grid_size=(8, 8))
+[34m[1mtrain: [39m[22mScanning '/scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/labels.cache' images and labels... 5600 f
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/04ffc939-00000000_jpg.rf.26a3a99899ac53708d6e13eb632a3d94.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/07034b4f-2ffea8e6_jpg.rf.614c8a2e6093bade1beef1e79f9c8656.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/0e5016e5-00000000_jpg.rf.7367aae2948f58d824398e786f5bb5a2.jpg: 2 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/0e888c35-00000000_jpg.rf.adbc3c96b673f54a2e438c37d65137da.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/0f11e283-a34ec892_jpg.rf.de7b05fab39edcf6edbdbce04353623a.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/18ee4d7a-00000000_jpg.rf.83463406e719b8f691a87423aaf378de.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/21df6903-00000000_jpg.rf.988848aa3adcbef398da3ae3466950ff.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/24ac78c9-0c0f84ee_jpg.rf.e254b940379b57a358633424481f8bae.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/36d5c63d-00000000_jpg.rf.e167bd85902647aa1ce607cfc6e14640.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/419ed58d-00000000_jpg.rf.8774d66c95113b37931b9ad3fb3b644d.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/4411f74d-00000000_jpg.rf.d91ea6f0c1f3eb2c496d9d8c01bb019e.jpg: 2 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/46181bc2-00000000_jpg.rf.4f6f98b6c863d108e5d8aed610de95d4.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/46630cfc-00000000_jpg.rf.1aadff2f37fb457874014cb3197a4798.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/48ad9d98-3416dd20_jpg.rf.678ff1ce63dae1416581687e864a93f1.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/4f65158d-00000000_jpg.rf.afea1d9df0ec37b0ca8b5f923adc934c.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/4ff25582-00000000_jpg.rf.44666bcef98911c799148c76ce59e2ff.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/53ea31c2-31ee487f_jpg.rf.01e8aa75376f627e8d79651428a1f593.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/58434cca-00000000_jpg.rf.59346fb7183bfe94f43bd0080aceb415.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/6303263d-00000000_jpg.rf.869a0d980b525bb0052078ad54360bd8.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/638a000d-00000000_jpg.rf.26862acee9a43b670eda85879421fc11.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/655ff376-00000000_jpg.rf.f2dc4a2c457dff6803c874e6282f8971.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/6f49dad6-4640b6cd_jpg.rf.0fb0c95c0c423e103181e4febfad6624.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/712a57c7-00000000_jpg.rf.5e0438b47098bc30efd1e1a593d4559d.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/7171644d-4e74752e_jpg.rf.107acf35359cef79db621d1c94bac4bc.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/7bc6abdd-b382dc00_jpg.rf.8fece8b5b8b5cc2d5f25adffaffa81d1.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/898ac5b9-00000000_jpg.rf.379752f2b1a6909d54d8bc9fb7b544a1.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/8b1a2101-91828523_jpg.rf.60e4daba0dfa98889b4155f559f7099e.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/97b17538-00000000_jpg.rf.897d196335f5b5285b5d22e2932340bd.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/ab309345-00000000_jpg.rf.693b0ac5ec24c0a77007f0847e2cdd21.jpg: 2 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/adfc8f5c-b1f02e04_jpg.rf.738f749db41a28f9e36a5d53e6dd7da4.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/train/images/b0263f3e-ece2fb89_jpg.rf.61de486056ac9841781bbc192cfab9d9.jpg: 1 duplicate labels removed
+
+
+
+
+[34m[1mtrain: [39m[22mCaching images (3.9GB ram): 100%|██████████| 5600/5600 [00:09<00:00, 605.05it/s]
+[34m[1mval: [39m[22mScanning '/scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/valid/labels.cache' images and labels... 1599 fou
+[34m[1mval: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/valid/images/06fff9c9-00000000_jpg.rf.f79cbcbeff504159a74dc13a21c21915.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/valid/images/0d6ee1b1-00000000_jpg.rf.a9318e3a941bcfd5c9c34c3899ec68c8.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/valid/images/1324c0d1-00000000_jpg.rf.efa01ea0952b823ef2041020dc9d4740.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/valid/images/1e68a7dc-e3394c1e_jpg.rf.e4987892fa0367a40d5d9e5f162ab497.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/valid/images/32613e1b-00000000_jpg.rf.9fc6e5e154d5ec4f0be81f7660a1645b.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/valid/images/331fbe86-5a575546_jpg.rf.2823990d9de6a0c9b0e742afc89de69b.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/valid/images/402a81ef-00000000_jpg.rf.b0331a796a956e07035de4cfdd4dff00.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/valid/images/44980840-fe7abc6b_jpg.rf.9a8487a30a967c4eeab3974a712ccb78.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/valid/images/47924e4b-41cb8bd8_jpg.rf.0943248ceed085306949a6d515a786fc.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/valid/images/872b83f1-12137e15_jpg.rf.935dd577bf8c6118f7ccf1ba24f1e35f.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/valid/images/904f9a94-00000000_jpg.rf.777390076baee7a82766fc44b17e7a41.jpg: 2 duplicate labels removed
+[34m[1mval: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/valid/images/97676d28-00000000_jpg.rf.e1cc783ecba54a62c7cf28e32baa3741.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/valid/images/9edddf0d-3146414e_jpg.rf.016822ec555dfea5b28150c0f04231fc.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/valid/images/a4455970-00000000_jpg.rf.071c75f209ee5542d05eff9818f55768.jpg: 2 duplicate labels removed
+[34m[1mval: [39m[22mWARNING: /scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/valid/images/a97c1475-00000000_jpg.rf.2d93fa8880001df9dfd6da918c6e23f3.jpg: 1 duplicate labels removed
+
+[34m[1mval: [39m[22mCaching images (1.1GB ram): 100%|██████████| 1599/1599 [00:02<00:00, 582.77it/s]
+Plotting labels to Yolov5/runs/train/exp4/labels.jpg...
+[34m[1mAutoAnchor: [39m[22m3.90 anchors/target, 0.980 Best Possible Recall (BPR). Anchors are a poor fit to dataset ⚠️, attempting to improve...
+[34m[1mAutoAnchor: [39m[22mWARNING: Extremely small objects found: 984 of 71961 labels are < 3 pixels in size
+[34m[1mAutoAnchor: [39m[22mRunning kmeans for 9 anchors on 71957 points...
+
+[34m[1mAutoAnchor: [39m[22mEvolving anchors with Genetic Algorithm: fitness = 0.7415: 100%|██████████| 1000/1000 [00:02<00:00, 456.41it/s]
+[34m[1mAutoAnchor: [39m[22mthr=0.25: 0.9983 best possible recall, 5.09 anchors past thr
+[34m[1mAutoAnchor: [39m[22mn=9, img_size=640, metric_all=0.334/0.742-mean/best, past_thr=0.487-mean: 6,6, 12,9, 8,21, 19,15, 32,22, 21,44, 54,39, 96,66, 169,126
+[34m[1mAutoAnchor: [39m[22mDone ✅ (optional: update model *.yaml to use these anchors in the future)
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1mYolov5/runs/train/exp4
+Starting training for 1 epochs...
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+       0/0     1.62G    0.1361   0.06485   0.06262       383       640:   0%|          | 1/350 [00:05<32:14,  5.54s/it]
+       0/0     1.85G    0.1384    0.0623   0.06331       481       640:   1%|          | 3/350 [00:07<12:07,  2.10s/it]
+       0/0     1.85G    0.1386   0.06201    0.0634       407       640:   1%|          | 4/350 [00:08<10:02,  1.74s/it]
+       0/0     1.85G    0.1385   0.06261   0.06343       469       640:   2%|▏         | 6/350 [00:11<07:38,  1.33s/it]
+       0/0     1.85G     0.138   0.06324   0.06334       488       640:   2%|▏         | 8/350 [00:13<06:45,  1.19s/it]
+       0/0     1.85G    0.1377   0.06414   0.06326       383       640:   3%|▎         | 10/350 [00:15<06:22,  1.12s/it]
+       0/0     1.85G    0.1374   0.06451   0.06306       390       640:   3%|▎         | 12/350 [00:17<06:41,  1.19s/it]
+       0/0     1.85G    0.1374   0.06459   0.06294       449       640:   4%|▎         | 13/350 [00:18<06:33,  1.17s/it]
+       0/0     1.85G    0.1371   0.06424   0.06274       317       640:   4%|▍         | 14/350 [00:19<06:25,  1.15s/it]
+       0/0     1.85G    0.1371   0.06392   0.06254       378       640:   4%|▍         | 15/350 [03:17<5:03:30, 54.36s/it]
+       0/0     1.85G    0.1368   0.06265   0.06187       335       640:   5%|▌         | 18/350 [03:19<1:45:10, 19.01s/it]
+       0/0     1.85G    0.1362   0.06205   0.06096       345       640:   6%|▋         | 22/350 [03:22<27:34,  5.04s/it]
+       0/0     1.85G    0.1357   0.06292   0.06031       362       640:   7%|▋         | 25/350 [03:24<11:39,  2.15s/it]
+       0/0     1.85G    0.1351   0.06403   0.05959       490       640:   8%|▊         | 28/350 [03:25<06:14,  1.16s/it]
+       0/0     1.85G    0.1346   0.06422   0.05888       329       640:   9%|▉         | 31/350 [03:27<04:19,  1.23it/s]
+       0/0     1.85G     0.134   0.06498   0.05809       371       640:  10%|▉         | 34/350 [03:29<03:39,  1.44it/s]
+       0/0     1.85G    0.1335   0.06519   0.05728       400       640:  11%|█         | 37/350 [03:31<03:23,  1.54it/s]
+       0/0     1.85G    0.1327   0.06641   0.05619       350       640:  12%|█▏        | 41/350 [03:34<03:16,  1.57it/s]
+       0/0     1.85G    0.1322   0.06635    0.0554       324       640:  13%|█▎        | 44/350 [03:36<03:13,  1.58it/s]
+       0/0     1.85G    0.1317   0.06712   0.05465       404       640:  13%|█▎        | 47/350 [03:37<03:12,  1.57it/s]
+       0/0     1.85G    0.1311   0.06772   0.05381       442       640:  14%|█▍        | 50/350 [03:39<03:11,  1.56it/s]
+       0/0     1.85G    0.1305   0.06798   0.05295       307       640:  15%|█▌        | 53/350 [03:41<03:07,  1.58it/s]
+       0/0     1.85G      0.13   0.06894   0.05216       425       640:  16%|█▌        | 56/350 [03:43<03:05,  1.59it/s]
+       0/0     1.85G    0.1292   0.06927   0.05104       405       640:  17%|█▋        | 60/350 [03:46<03:02,  1.59it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+       0/0     1.85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+Fusing layers... 85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+Fusing layers... 85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+Fusing layers... 85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+Fusing layers... 85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+Fusing layers... 85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+Fusing layers... 85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+Fusing layers... 85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+Fusing layers... 85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+Fusing layers... 85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+Fusing layers... 85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+Fusing layers... 85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+Fusing layers... 85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+Fusing layers... 85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+Fusing layers... 85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+Fusing layers... 85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+Fusing layers... 85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+Fusing layers... 85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+Fusing layers... 85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+Fusing layers... 85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+Fusing layers... 85G    0.1286   0.06929   0.05016       402       640:  18%|█▊        | 63/350 [03:48<02:59,  1.60it/s]
+               train       1599         16          1          0   0.000134   1.34e-05 | 63/350 [03:48<02:59,  1.60it/s]
+               train       1599         16          1          0   0.000134   1.34e-05 | 63/350 [03:48<02:59,  1.60it/s]
+               train       1599         16          1          0   0.000134   1.34e-05 | 63/350 [03:48<02:59,  1.60it/s]
+               train       1599         16          1          0   0.000134   1.34e-05 | 63/350 [03:48<02:59,  1.60it/s]
