@@ -7,7 +7,7 @@ Introduced as a technique to generate synthetic data in Yolov4, the mosaic data 
 
 ## Approach:
 
-Given location of directory containing 'train' images of BDD100k-10k Instance Segmentation dataset and the annotations file for this dataset, we perform synthetic image construction by category of the instance label in the annotation file. Final folder structure for the target directory looks like:
+Given location of directory containing 'train' images of BDD100k-10k Instance Segmentation dataset and the annotations file for this dataset, we perform synthetic image construction by category of the instance label in the annotation file. Training is done on Yolov5 model, hence annotation format used is yolov5pytorchtxt. Final folder structure for the target directory looks like:
 
 Directory_Location : '/home/.../Parent_Directory/'
 
