@@ -1,0 +1,8 @@
+name: BDD10-DA-Yolov5
+
+channels:
+  - default
+  - conda-forge
+
+dependencies:
+  - python=3.8.1
