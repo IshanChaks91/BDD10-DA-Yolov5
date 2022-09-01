@@ -103,7 +103,7 @@ Synthetic Image is created by concatenating 4 images into 2x2 grid with dimensio
 ```
 A sample mosaic looks like:
 
-![Figure 1: Sample Mosaic](/img/0f172b7f-24d20001_00e9be89-00001570_3924f539-a72e7cc6_5f697884-f3f9d519.jpg)
+![Figure 1: Sample Mosaic](/mosaic/img/0f172b7f-24d20001_00e9be89-00001570_3924f539-a72e7cc6_5f697884-f3f9d519.jpg)
 
 ## Instruction:
 
