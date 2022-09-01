@@ -111,7 +111,7 @@ Note: In this method, after category based selection of 4-image set is obtained,
 
 ## Instruction:
 
-1. Create environment (using environment.yaml / pyproject.toml / conda_requirements.txt / pip_requirements.txt) is not created earlier. Example:
+1. Create environment (using environment.yaml / pyproject.toml / conda_requirements.txt / pip_requirements.txt) if not created earlier. Example:
 ```
 conda create -n ENVNAME --file conda_requirements.txt
 ```
@@ -127,3 +127,4 @@ mosaic_loc : < directory to save mosaic output>
 ```
 with open(".../././...", "r") as stream:
 ```
+4. Run mosaic.py
