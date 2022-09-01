@@ -6,7 +6,7 @@ import json
 import time
 import numpy as np
 
-# Reading from mosaic_path.yaml to store location of train/val images
+# Reading from mosaic_path.yaml to store location of train and val images and location for mosaic augmentation
 with open("/home/ic/Downloads/RnD_Augmentation/Mosaic/mosaic_path.yaml", "r") as stream:
     try:
         mosaic_path = yaml.safe_load(stream)
@@ -19,22 +19,32 @@ with open("/home/ic/Downloads/RnD_Augmentation/Mosaic/mosaic_path.yaml", "r") as
 
 def main():   
 
+    # each category in category list of bdd100k_10k annotations
     for cat in category_bdd10:
+        # ignore check for category==car to try to limit instances of car
         if cat != 'car':
+            # create list of image annotations for the category
             category_image_array = []
             for img_idx in range(len(bdd_data)):
                 for label in bdd_data[img_idx]['labels']:
                     if label['category'] == cat:
                         category_image_array.append(bdd_data[img_idx])
                         break
-
+            
+            # check number of mosaic images created in the category directory
             _, _, files = next(os.walk(mosaic_location + 'train/labels/' + cat))
+
             file_count = len(files)
-            while file_count < 500:
+            while file_count < 1000:
+
+                # shuffle the images of the category, slice the total images into 4 bins
+                # create 4 image set from one image of each bin with same index position
 
                 category_array_idx = list(range(len(category_image_array)))
                 np.random.shuffle(category_array_idx)
-
+                
+                # if size of category list is not divisible by 4, remove number of images
+                #  from the list equal to reaminder
                 if len(category_array_idx)%4 != 0:
                     category_array_idx = category_array_idx[:-(len(category_array_idx)%4)]
 
@@ -49,24 +59,32 @@ def main():
                     im3_nm = category_image_array[category_array_idx_slice3[indx]]['name']
                     im4_nm = category_image_array[category_array_idx_slice4[indx]]['name']
 
+                    # generate mosaic image by calling generate_mosaic() function
                     mosaic_utils.generate_mosaic(im1_nm, im2_nm, im3_nm, im4_nm, bdd_data, category_bdd10, cat, train_location, mosaic_location)
+
+                # file count update
                 _, _, files = next(os.walk(mosaic_location + 'train/labels/' + cat))
                 file_count = len(files)
 
 if __name__ == "__main__":
 
+    # read bdd100k_10 train annotation file
     with open(annotation_location + 'ins_seg_train.json', 'r') as f:
         bdd_data = json.load(f)
 
+    # create list of categories of bdd100k_10k
     category_bdd10 = []
     for img in bdd_data:
         for properties in img['labels']:
             if properties['category'] not in category_bdd10:
                 category_bdd10.append(properties['category'])
+
+    # names string is used in the data.yaml file required to run Yolov5 model
     names = "'"
     for cat in category_bdd10:
         names += cat + "', '" 
 
+    # 
     for cat in category_bdd10:
 
         mosaic_utils.dir_category_create(mosaic_location + 'train/images/', cat)
@@ -78,10 +96,12 @@ if __name__ == "__main__":
         mosaic_utils.dir_category_create(mosaic_location + 'train/images/actual_all/', cat)
         mosaic_utils.dir_category_create(mosaic_location + 'train/labels/actual_all/', cat)  
 
+    # creates data.yaml, train and val location strings created in data.yaml file
     with open(mosaic_location + 'data.yaml', 'w') as f:
         f.write('train: ' + train_location + 'images\n' + 'val: ' + val_location + 'images\n\n' + 'nc: ' + str(len(category_bdd10)) + '\n' + 'names: [' + names[:-3] + ']')
 
-    start = time.time()
-    main()
-    end = time.time()
-    print(end-start)
+
+    # start = time.time()
+    # main()
+    # end = time.time()
+    # print(end-start)

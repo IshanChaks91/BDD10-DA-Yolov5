@@ -6,10 +6,25 @@ from shapely.geometry import Polygon
 import albumentations as A
 
 # create directory and directory structure for mosaic data augmentation
-def dir_category_create(mosaic_location, directory):  
+def dir_category_create(mosaic_location, directory):
+    """
+        Function takes parent directory location where directory structure
+        and child directories will be created.
+
+        Parameters
+        ----------
+        mosaic_location : location of parent directory from mosaic_path.yaml <type:str>
+        directory : child directory name as per category <type:str> 
+        
+        Returns
+        -------
+        Raises
+        ------
+    """
     if not os.path.exists(mosaic_location + directory):
         os.makedirs(mosaic_location + directory)
 
+# create function to clip bounding box that moves outside image boundary
 def clip(minx, miny, maxx, maxy, width, height):
 
     """
@@ -29,7 +44,7 @@ def clip(minx, miny, maxx, maxy, width, height):
         
         Returns
         -------
-        Boolean : indicates whether counding box exists within image frame
+        Boolean : indicates whether bounding box exists within image frame
         List : updated bounding box dimensions
 
         Raises
@@ -56,16 +71,17 @@ def clip(minx, miny, maxx, maxy, width, height):
 def generate_mosaic(im1_nm, im2_nm, im3_nm, im4_nm, bdd_data, category_bdd10, category_type, train_location, mosaic_location):
 
     """
-        Function takes 4 image file names from the BBD100k-10k
-        'train' dataset for instance segmentation, 
-        a list which contains the annotations for the 'train' dataset,
-        list of categories in the dataset, category type, training image location,
-        and directory location in which the synthetic images and labels are saved.
-        Creates 2x2 grid based mosaic of 4 images of respective catergory_type. The images are selected 
-        as per category in the dataset:
+        Function takes 4 image file names from the BBD100k-10k 'train' 
+        dataset for instance segmentation, a list which contains the 
+        annotations for the 'train' dataset, list of categories in the 
+        dataset, category type, training image location, and directory 
+        location in which the synthetic images and labels are saved.
+        Creates 2x2 grid based mosaic of 4 images of respective 
+        catergory_type. 
+        
+        The images are selected as per category in the dataset:
         
             category types: ['car', 'person', 'truck', 'bus', 'bicycle', 'rider', 'trailer', 'motorcycle', 'caravan', 'train']
-
 
         Parameters
         ----------
@@ -79,21 +95,28 @@ def generate_mosaic(im1_nm, im2_nm, im3_nm, im4_nm, bdd_data, category_bdd10, ca
         
         Returns
         -------
-        creates in location mosaic of the 4 images as per category, also creates directory for mosaic images that contain instances per catergory
-        creates in location annotaion of the mosaic as per yolov5pytorch txt format for yolov5
+        creates in location mosaic of the 4 images as per category, also creates 
+        directory for mosaic images that contain instances per catergory creates 
+        in location annotaion of the mosaic as per yolov5pytorch txt format for yolov5
         
         Raises
         ------
     """
 
+    # variables to check horizontal flip
     check_flip1 = False
     check_flip2 = False
     check_flip3 = False
     check_flip4 = False
 
+    # list to store value between 0.7 and 3.2, a random value selected from list to feed
+    # albumentation gamma function applied on image.
     g_val = np.arange(0.7, 3.2, 0.3).tolist()
+    
+    # albumentation horizontal flip funtion (p=1 applies 100% probability of flip)
     transform_horizontal = A.HorizontalFlip(p=1.)
 
+    # string to capture image and label - file name format, to save image and annotation of mosaic
     mosaic_file_name = im1_nm[:-4] + '_' + im2_nm[:-4] + '_' + im3_nm[:-4] + '_' + im4_nm[:-4]
 
     # Maximum values of x and y of the tolerance box around the center of the grid frame,
@@ -115,14 +138,18 @@ def generate_mosaic(im1_nm, im2_nm, im3_nm, im4_nm, bdd_data, category_bdd10, ca
         if im['name'] == im4_nm:
             lb4 = im
 
+    # read and save images 
     im1 = cv2.imread(train_location + lb1['name'])
     im2 = cv2.imread(train_location + lb2['name'])
     im3 = cv2.imread(train_location + lb3['name'])
     im4 = cv2.imread(train_location + lb4['name'])
 
+    # for each image, apply 50% chance of gamma transform
     if random.random() > 0.5:
         gamma_val = random.sample(g_val, k=1)[0]
         im1 = A.gamma_transform(im1, gamma=gamma_val)
+    #for each image, apply 50% chance of horizontal flip transform
+    # create flag if flip occurs 
     if random.random() > 0.5:
         im1 = transform_horizontal(image=im1)['image']
         check_flip1 = True
@@ -158,7 +185,7 @@ def generate_mosaic(im1_nm, im2_nm, im3_nm, im4_nm, bdd_data, category_bdd10, ca
     x_cen = np.shape(im_stacked)[1] / 2
     y_cen = np.shape(im_stacked)[0] / 2
 
-    # create new center ker_cen for mosaic frame within the tolerance box 
+    # create new center ker_cen (kernel center) for mosaic frame within the tolerance box 
     ker_cen = [y_cen + np.random.randint(-y_tol, y_tol), x_cen + np.random.randint(-x_tol, x_tol)]
     # create mosaic frame by slicing the grid frame from ker_cen
     mosaic = im_stacked[int(ker_cen[0]-(y_cen/2)):int(ker_cen[0]+(y_cen/2)), int(ker_cen[1]-(x_cen/2)):int(ker_cen[1]+(x_cen/2))]
@@ -179,13 +206,14 @@ def generate_mosaic(im1_nm, im2_nm, im3_nm, im4_nm, bdd_data, category_bdd10, ca
 
     # for each stacked image in the grid frame (im1.im2.im3.im4)
 
-    # condition to track whether category is present inside mosaic frame
+    # flag to track whether category is present inside mosaic frame
     check_cat = False
     # use the annotations of each label in the image to copy modified vertices of labels to string
     for an in lb1['labels']:
-        # change the reference of each pixel from the grid origin mosaic frame origin
+        # change the reference of each pixel from the grid origin
         ver = np.array(an['poly2d'][0]['vertices'])
         if check_flip1:
+            # update bounding box location of each label in flipped image
             ver = np.vstack((1280 - ver[:,0] , ver[:,1])).T
         vert = ver - np.array([ker_cen[1]-mosaic_width/2, ker_cen[0]-mosaic_height/2])
         # create mask of instance using ins seg vertices from the annotations

@@ -1,7 +1,7 @@
-train_loc : /home/ic/Downloads/RnD_Augmentation/bdd100k_images_10k/bdd100k/images/10k/train/
-val_loc : /home/ic/Downloads/RnD_Augmentation/bdd100k_images_10k/bdd100k/images/10k/val/
-test_loc : /home/ic/Downloads/RnD_Augmentation/bdd100k_images_10k/bdd100k/images/10k/test/
+train_loc : /scratch/ichakr2s/bdd100k/data/images/10k/train/
+val_loc : /scratch/ichakr2s/bdd100k/data/images/10k/val/
+test_loc : /scratch/ichakr2s/bdd100k/data/images/10k/test/
 
-annotation_loc : /home/ic/Downloads/RnD_Augmentation/bdd100k_ins_seg_labels_trainval/bdd100k/labels/ins_seg/polygons/
+annotation_loc : /scratch/ichakr2s/bdd100k/data/labels/10k/ins_seg/polygons/
 
-mosaic_loc : /home/ic/Downloads/RnD_Augmentation/Mosaic_Aug/
+mosaic_loc : /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/
