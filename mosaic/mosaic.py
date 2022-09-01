@@ -7,7 +7,7 @@ import time
 import numpy as np
 
 # Reading from mosaic_path.yaml to store location of train and val images and location for mosaic augmentation
-with open("/home/ic/Downloads/RnD_Augmentation/Mosaic/mosaic_path.yaml", "r") as stream:
+with open("/home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/mosaic/mosaic_path.yaml", "r") as stream:
     try:
         mosaic_path = yaml.safe_load(stream)
         train_location = str(mosaic_path['train_loc'])
