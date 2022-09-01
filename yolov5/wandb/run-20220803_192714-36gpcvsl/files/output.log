@@ -1,0 +1,17 @@
+Dataset not found ⚠️, missing paths ['/scratch/ichakr2s/bdd100k/data/bdd100k_10k_ins_seg_images_annotations_Yolov5pytorch/bdd100k_10k_ins_seg_images_labels_train_val_test_yolov5pytorch/valid/images']
+Traceback (most recent call last):
+  File "/home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/yolov5/train.py", line 625, in <module>
+    main(opt)
+  File "/home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/yolov5/train.py", line 520, in main
+    train(opt.hyp, opt, device, callbacks)
+  File "/home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/yolov5/train.py", line 91, in train
+    loggers = Loggers(save_dir, weights, opt, hyp, LOGGER)  # loggers instance
+  File "/home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/yolov5/utils/loggers/__init__.py", line 82, in __init__
+    self.wandb = WandbLogger(self.opt, run_id)
+  File "/home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/yolov5/utils/loggers/wandb/wandb_utils.py", line 180, in __init__
+    self.data_dict = check_wandb_dataset(opt.data)
+  File "/home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/yolov5/utils/loggers/wandb/wandb_utils.py", line 56, in check_wandb_dataset
+    return check_dataset(data_file)
+  File "/home/ichakr2s/my_projects/BDD10-DA-Yolov5/BDD10-DA-Yolov5/yolov5/utils/general.py", line 508, in check_dataset
+    raise Exception(emojis('Dataset not found ❌'))
+Exception: Dataset not found ❌
