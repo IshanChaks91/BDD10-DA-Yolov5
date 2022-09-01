@@ -1,9 +1,0 @@
-# platform: linux-64
-# python3.8.1
-
-PyYAML==5.4.1
-numpy==1.23.2
-jsonschema==4.14.0
-opencv-python==4.6.0.66
-Shapely==1.8.4
-albumentations==1.2.1
