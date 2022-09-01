@@ -15,7 +15,7 @@ Directory_Location : '/home/.../Parent_Directory/'
 Parent_directory
         |
         |_ _ _ train
-        |         |_ _ _ images
+        |         |_ _ _ images (mosaics per category, may not contain a single instance of the category)
         |         |         |_ _ _ car
         |         |         |_ _ _ person
         |         |         |_ _ _ truck
@@ -26,8 +26,18 @@ Parent_directory
         |         |         |_ _ _ motorcycle
         |         |         |_ _ _ caravan
         |         |         |_ _ _ train
-        |         |         |_ _ _ actual_all (contains mosaics images with all category instances visible in image)
-        |         |_ _ _ labels
+        |         |         |_ _ _ actual_all (mosaics per catergory, only images with atleast one visible instance)
+        |         |                  |_ _ _ car
+        |         |                  |_ _ _ person
+        |         |                  |_ _ _ truck
+        |         |                  |_ _ _ bus
+        |         |                  |_ _ _ bicycle
+        |         |                  |_ _ _ rider
+        |         |                  |_ _ _ trailer
+        |         |                  |_ _ _ motorcycle
+        |         |                  |_ _ _ caravan
+        |         |                  |_ _ _ train
+        |         |_ _ _ labels (mosaic labels per category, may not contain a single instance of the category)
         |                   |_ _ _ car
         |                   |_ _ _ person
         |                   |_ _ _ truck
@@ -38,7 +48,17 @@ Parent_directory
         |                   |_ _ _ motorcycle
         |                   |_ _ _ caravan
         |                   |_ _ _ train
-        |                   |_ _ _ actual_all (contains mosaics images with all category instances visible in image)
+        |                   |_ _ _ actual_all (mosaic labels per catergory, only images with atleast one visible instance)
+        |                            |_ _ _ car
+        |                            |_ _ _ person
+        |                            |_ _ _ truck
+        |                            |_ _ _ bus
+        |                            |_ _ _ bicycle
+        |                            |_ _ _ rider
+        |                            |_ _ _ trailer
+        |                            |_ _ _ motorcycle
+        |                            |_ _ _ caravan
+        |                            |_ _ _ train
         |
         |_ _ _ val
                   |_ _ _ images
