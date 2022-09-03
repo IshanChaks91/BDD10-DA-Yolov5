@@ -1,0 +1,175 @@
+2022-09-03 17:54:10,050 INFO    MainThread:246286 [internal.py:wandb_internal():90] W&B internal server running at pid: 246286, started at: 2022-09-03 17:54:10.049902
+2022-09-03 17:54:10,054 INFO    WriterThread:246286 [datastore.py:open_for_write():75] open: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/run-b81vl0lg.wandb
+2022-09-03 17:54:10,059 DEBUG   SenderThread:246286 [sender.py:send():236] send: header
+2022-09-03 17:54:10,059 DEBUG   SenderThread:246286 [sender.py:send():236] send: run
+2022-09-03 17:54:10,080 INFO    SenderThread:246286 [sender.py:_maybe_setup_resume():493] checking resume status for None/YOLOv5/b81vl0lg
+2022-09-03 17:54:10,453 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: check_version
+2022-09-03 17:54:10,462 INFO    SenderThread:246286 [dir_watcher.py:__init__():216] watching files in: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files
+2022-09-03 17:54:10,462 INFO    SenderThread:246286 [sender.py:_start_run_threads():815] run started: b81vl0lg with start time 1662220449
+2022-09-03 17:54:10,463 DEBUG   SenderThread:246286 [sender.py:send():236] send: summary
+2022-09-03 17:54:10,464 INFO    SenderThread:246286 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-09-03 17:54:10,465 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: check_version
+2022-09-03 17:54:10,540 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: run_start
+2022-09-03 17:54:10,555 DEBUG   HandlerThread:246286 [meta.py:__init__():35] meta init
+2022-09-03 17:54:10,555 DEBUG   HandlerThread:246286 [meta.py:__init__():49] meta init done
+2022-09-03 17:54:10,555 DEBUG   HandlerThread:246286 [meta.py:probe():209] probe
+2022-09-03 17:54:10,563 DEBUG   HandlerThread:246286 [meta.py:_setup_git():199] setup git
+2022-09-03 17:54:10,600 DEBUG   HandlerThread:246286 [meta.py:_setup_git():206] setup git done
+2022-09-03 17:54:10,600 DEBUG   HandlerThread:246286 [meta.py:_save_pip():53] save pip
+2022-09-03 17:54:10,603 DEBUG   HandlerThread:246286 [meta.py:_save_pip():67] save pip done
+2022-09-03 17:54:10,603 DEBUG   HandlerThread:246286 [meta.py:_save_conda():74] save conda
+2022-09-03 17:54:11,465 INFO    Thread-7  :246286 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/wandb-summary.json
+2022-09-03 17:54:11,465 INFO    Thread-7  :246286 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/conda-environment.yaml
+2022-09-03 17:54:11,465 INFO    Thread-7  :246286 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/requirements.txt
+2022-09-03 17:54:13,779 DEBUG   HandlerThread:246286 [meta.py:_save_conda():84] save conda done
+2022-09-03 17:54:13,780 DEBUG   HandlerThread:246286 [meta.py:probe():247] probe done
+2022-09-03 17:54:13,922 DEBUG   SenderThread:246286 [sender.py:send():236] send: files
+2022-09-03 17:54:13,923 INFO    SenderThread:246286 [sender.py:_save_file():952] saving file wandb-metadata.json with policy now
+2022-09-03 17:54:13,941 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: stop_status
+2022-09-03 17:54:13,941 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: stop_status
+2022-09-03 17:54:14,106 DEBUG   SenderThread:246286 [sender.py:send():236] send: telemetry
+2022-09-03 17:54:14,107 DEBUG   SenderThread:246286 [sender.py:send():236] send: config
+2022-09-03 17:54:14,464 INFO    Thread-11 :246286 [upload_job.py:push():138] Uploaded file /tmp/slurm.484275./tmp6ox5s2tgwandb/2bp2hjnx-wandb-metadata.json
+2022-09-03 17:54:14,470 INFO    Thread-7  :246286 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/conda-environment.yaml
+2022-09-03 17:54:14,470 INFO    Thread-7  :246286 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/output.log
+2022-09-03 17:54:14,470 INFO    Thread-7  :246286 [dir_watcher.py:_on_file_created():269] file/dir created: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/wandb-metadata.json
+2022-09-03 17:54:16,476 INFO    Thread-7  :246286 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/output.log
+2022-09-03 17:54:18,481 INFO    Thread-7  :246286 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/output.log
+2022-09-03 17:54:20,487 INFO    Thread-7  :246286 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/output.log
+2022-09-03 17:54:22,492 INFO    Thread-7  :246286 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/output.log
+2022-09-03 17:54:24,499 INFO    Thread-7  :246286 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/output.log
+2022-09-03 17:54:26,505 INFO    Thread-7  :246286 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/output.log
+2022-09-03 17:54:28,512 INFO    Thread-7  :246286 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/output.log
+2022-09-03 17:54:29,110 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: stop_status
+2022-09-03 17:54:29,110 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: stop_status
+2022-09-03 17:54:30,519 INFO    Thread-7  :246286 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/output.log
+2022-09-03 17:54:32,525 INFO    Thread-7  :246286 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/output.log
+2022-09-03 17:54:34,532 INFO    Thread-7  :246286 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/output.log
+2022-09-03 17:54:36,536 INFO    Thread-7  :246286 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/output.log
+2022-09-03 17:54:38,540 INFO    Thread-7  :246286 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/output.log
+2022-09-03 17:54:39,211 DEBUG   SenderThread:246286 [sender.py:send():236] send: stats
+2022-09-03 17:54:40,543 INFO    Thread-7  :246286 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/config.yaml
+2022-09-03 17:54:42,547 INFO    Thread-7  :246286 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/output.log
+2022-09-03 17:54:44,282 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: stop_status
+2022-09-03 17:54:44,282 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: stop_status
+2022-09-03 17:54:48,557 INFO    Thread-7  :246286 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/output.log
+2022-09-03 17:54:50,560 INFO    Thread-7  :246286 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/output.log
+2022-09-03 17:54:53,563 INFO    Thread-7  :246286 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/output.log
+2022-09-03 17:54:55,566 INFO    Thread-7  :246286 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/output.log
+2022-09-03 17:54:57,938 DEBUG   SenderThread:246286 [sender.py:send():236] send: telemetry
+2022-09-03 17:54:59,572 INFO    Thread-7  :246286 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/output.log
+2022-09-03 17:55:00,205 DEBUG   SenderThread:246286 [sender.py:send():236] send: exit
+2022-09-03 17:55:00,205 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: poll_exit
+2022-09-03 17:55:00,205 INFO    SenderThread:246286 [sender.py:send_exit():372] handling exit code: 1
+2022-09-03 17:55:00,206 INFO    SenderThread:246286 [sender.py:send_exit():374] handling runtime: 49
+2022-09-03 17:55:00,208 INFO    SenderThread:246286 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-09-03 17:55:00,208 INFO    SenderThread:246286 [sender.py:send_exit():380] send defer
+2022-09-03 17:55:00,209 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: poll_exit
+2022-09-03 17:55:00,210 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: defer
+2022-09-03 17:55:00,210 INFO    HandlerThread:246286 [handler.py:handle_request_defer():163] handle defer: 0
+2022-09-03 17:55:00,210 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: defer
+2022-09-03 17:55:00,210 INFO    SenderThread:246286 [sender.py:send_request_defer():389] handle sender defer: 0
+2022-09-03 17:55:00,210 INFO    SenderThread:246286 [sender.py:transition_state():393] send defer: 1
+2022-09-03 17:55:00,211 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: defer
+2022-09-03 17:55:00,211 INFO    HandlerThread:246286 [handler.py:handle_request_defer():163] handle defer: 1
+2022-09-03 17:55:00,258 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: defer
+2022-09-03 17:55:00,259 INFO    SenderThread:246286 [sender.py:send_request_defer():389] handle sender defer: 1
+2022-09-03 17:55:00,259 INFO    SenderThread:246286 [sender.py:transition_state():393] send defer: 2
+2022-09-03 17:55:00,260 DEBUG   SenderThread:246286 [sender.py:send():236] send: stats
+2022-09-03 17:55:00,261 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: defer
+2022-09-03 17:55:00,261 INFO    HandlerThread:246286 [handler.py:handle_request_defer():163] handle defer: 2
+2022-09-03 17:55:00,261 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: defer
+2022-09-03 17:55:00,261 INFO    SenderThread:246286 [sender.py:send_request_defer():389] handle sender defer: 2
+2022-09-03 17:55:00,261 INFO    SenderThread:246286 [sender.py:transition_state():393] send defer: 3
+2022-09-03 17:55:00,262 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: defer
+2022-09-03 17:55:00,262 INFO    HandlerThread:246286 [handler.py:handle_request_defer():163] handle defer: 3
+2022-09-03 17:55:00,262 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: defer
+2022-09-03 17:55:00,262 INFO    SenderThread:246286 [sender.py:send_request_defer():389] handle sender defer: 3
+2022-09-03 17:55:00,263 INFO    SenderThread:246286 [sender.py:transition_state():393] send defer: 4
+2022-09-03 17:55:00,263 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: defer
+2022-09-03 17:55:00,263 INFO    HandlerThread:246286 [handler.py:handle_request_defer():163] handle defer: 4
+2022-09-03 17:55:00,263 DEBUG   SenderThread:246286 [sender.py:send():236] send: summary
+2022-09-03 17:55:00,265 INFO    SenderThread:246286 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-09-03 17:55:00,265 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: defer
+2022-09-03 17:55:00,266 INFO    SenderThread:246286 [sender.py:send_request_defer():389] handle sender defer: 4
+2022-09-03 17:55:00,266 INFO    SenderThread:246286 [sender.py:transition_state():393] send defer: 5
+2022-09-03 17:55:00,266 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: defer
+2022-09-03 17:55:00,266 INFO    HandlerThread:246286 [handler.py:handle_request_defer():163] handle defer: 5
+2022-09-03 17:55:00,267 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: defer
+2022-09-03 17:55:00,267 INFO    SenderThread:246286 [sender.py:send_request_defer():389] handle sender defer: 5
+2022-09-03 17:55:00,313 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: poll_exit
+2022-09-03 17:55:00,518 INFO    SenderThread:246286 [sender.py:transition_state():393] send defer: 6
+2022-09-03 17:55:00,518 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: poll_exit
+2022-09-03 17:55:00,519 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: defer
+2022-09-03 17:55:00,519 INFO    HandlerThread:246286 [handler.py:handle_request_defer():163] handle defer: 6
+2022-09-03 17:55:00,520 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: defer
+2022-09-03 17:55:00,520 INFO    SenderThread:246286 [sender.py:send_request_defer():389] handle sender defer: 6
+2022-09-03 17:55:00,520 INFO    SenderThread:246286 [dir_watcher.py:finish():353] shutting down directory watcher
+2022-09-03 17:55:00,575 INFO    SenderThread:246286 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/output.log
+2022-09-03 17:55:00,575 INFO    SenderThread:246286 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/wandb-summary.json
+2022-09-03 17:55:00,575 INFO    SenderThread:246286 [dir_watcher.py:_on_file_modified():286] file/dir modified: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/config.yaml
+2022-09-03 17:55:00,576 INFO    SenderThread:246286 [dir_watcher.py:finish():383] scan: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files
+2022-09-03 17:55:00,576 INFO    SenderThread:246286 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/config.yaml config.yaml
+2022-09-03 17:55:00,577 INFO    SenderThread:246286 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/wandb-summary.json wandb-summary.json
+2022-09-03 17:55:00,583 INFO    SenderThread:246286 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/requirements.txt requirements.txt
+2022-09-03 17:55:00,592 INFO    SenderThread:246286 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/conda-environment.yaml conda-environment.yaml
+2022-09-03 17:55:00,599 INFO    SenderThread:246286 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/wandb-metadata.json wandb-metadata.json
+2022-09-03 17:55:00,600 INFO    SenderThread:246286 [dir_watcher.py:finish():397] scan save: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/output.log output.log
+2022-09-03 17:55:00,606 INFO    SenderThread:246286 [sender.py:transition_state():393] send defer: 7
+2022-09-03 17:55:00,616 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: defer
+2022-09-03 17:55:00,617 INFO    HandlerThread:246286 [handler.py:handle_request_defer():163] handle defer: 7
+2022-09-03 17:55:00,618 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: defer
+2022-09-03 17:55:00,618 INFO    SenderThread:246286 [sender.py:send_request_defer():389] handle sender defer: 7
+2022-09-03 17:55:00,618 INFO    SenderThread:246286 [file_pusher.py:finish():171] shutting down file pusher
+2022-09-03 17:55:00,622 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: poll_exit
+2022-09-03 17:55:00,623 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: poll_exit
+2022-09-03 17:55:00,726 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: poll_exit
+2022-09-03 17:55:00,727 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: poll_exit
+2022-09-03 17:55:00,829 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: poll_exit
+2022-09-03 17:55:00,830 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: poll_exit
+2022-09-03 17:55:00,932 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: poll_exit
+2022-09-03 17:55:00,933 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: poll_exit
+2022-09-03 17:55:01,035 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: poll_exit
+2022-09-03 17:55:01,036 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: poll_exit
+2022-09-03 17:55:01,133 INFO    Thread-14 :246286 [upload_job.py:push():138] Uploaded file /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/requirements.txt
+2022-09-03 17:55:01,140 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: poll_exit
+2022-09-03 17:55:01,141 INFO    Thread-12 :246286 [upload_job.py:push():138] Uploaded file /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/config.yaml
+2022-09-03 17:55:01,141 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: poll_exit
+2022-09-03 17:55:01,151 INFO    Thread-13 :246286 [upload_job.py:push():138] Uploaded file /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/wandb-summary.json
+2022-09-03 17:55:01,152 INFO    Thread-16 :246286 [upload_job.py:push():138] Uploaded file /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/output.log
+2022-09-03 17:55:01,171 INFO    Thread-15 :246286 [upload_job.py:push():138] Uploaded file /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/files/conda-environment.yaml
+2022-09-03 17:55:01,244 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: poll_exit
+2022-09-03 17:55:01,244 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: poll_exit
+2022-09-03 17:55:01,347 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: poll_exit
+2022-09-03 17:55:01,347 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: poll_exit
+2022-09-03 17:55:01,372 INFO    Thread-6  :246286 [sender.py:transition_state():393] send defer: 8
+2022-09-03 17:55:01,373 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: defer
+2022-09-03 17:55:01,373 INFO    HandlerThread:246286 [handler.py:handle_request_defer():163] handle defer: 8
+2022-09-03 17:55:01,374 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: defer
+2022-09-03 17:55:01,374 INFO    SenderThread:246286 [sender.py:send_request_defer():389] handle sender defer: 8
+2022-09-03 17:55:01,450 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: poll_exit
+2022-09-03 17:55:02,033 INFO    SenderThread:246286 [sender.py:transition_state():393] send defer: 9
+2022-09-03 17:55:02,033 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: poll_exit
+2022-09-03 17:55:02,034 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: defer
+2022-09-03 17:55:02,035 INFO    HandlerThread:246286 [handler.py:handle_request_defer():163] handle defer: 9
+2022-09-03 17:55:02,035 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: defer
+2022-09-03 17:55:02,035 INFO    SenderThread:246286 [sender.py:send_request_defer():389] handle sender defer: 9
+2022-09-03 17:55:02,035 INFO    SenderThread:246286 [sender.py:transition_state():393] send defer: 10
+2022-09-03 17:55:02,036 DEBUG   SenderThread:246286 [sender.py:send():236] send: final
+2022-09-03 17:55:02,037 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: defer
+2022-09-03 17:55:02,037 DEBUG   SenderThread:246286 [sender.py:send():236] send: footer
+2022-09-03 17:55:02,037 INFO    HandlerThread:246286 [handler.py:handle_request_defer():163] handle defer: 10
+2022-09-03 17:55:02,038 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: defer
+2022-09-03 17:55:02,038 INFO    SenderThread:246286 [sender.py:send_request_defer():389] handle sender defer: 10
+2022-09-03 17:55:02,137 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: poll_exit
+2022-09-03 17:55:02,137 DEBUG   SenderThread:246286 [sender.py:send_request():250] send_request: poll_exit
+2022-09-03 17:55:02,137 INFO    SenderThread:246286 [file_pusher.py:join():176] waiting for file pusher
+2022-09-03 17:55:02,568 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: sampled_history
+2022-09-03 17:55:02,570 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: get_summary
+2022-09-03 17:55:02,572 DEBUG   HandlerThread:246286 [handler.py:handle_request():140] handle_request: shutdown
+2022-09-03 17:55:02,572 INFO    HandlerThread:246286 [handler.py:finish():806] shutting down handler
+2022-09-03 17:55:03,039 INFO    WriterThread:246286 [datastore.py:close():279] close: /home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/wandb/run-20220903_175409-b81vl0lg/run-b81vl0lg.wandb
+2022-09-03 17:55:03,466 INFO    SenderThread:246286 [sender.py:finish():1114] shutting down sender
+2022-09-03 17:55:03,466 INFO    SenderThread:246286 [file_pusher.py:finish():171] shutting down file pusher
+2022-09-03 17:55:03,466 INFO    SenderThread:246286 [file_pusher.py:join():176] waiting for file pusher
+2022-09-03 17:55:03,470 INFO    MainThread:246286 [internal.py:handle_exit():80] Internal process exited

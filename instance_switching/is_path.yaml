@@ -1,0 +1,7 @@
+train_loc : /scratch/ichakr2s/bdd100k/data/images/10k/train/
+val_loc : /scratch/ichakr2s/bdd100k/data/images/10k/val/
+test_loc : /scratch/ichakr2s/bdd100k/data/images/10k/test/
+
+annotation_loc : /scratch/ichakr2s/bdd100k/data/labels/10k/ins_seg/polygons/
+
+is_loc : /scratch/ichakr2s/yolov5pytorch_aug/is_bdd10k/IS_Aug/

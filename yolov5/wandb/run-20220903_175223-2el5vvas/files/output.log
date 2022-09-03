@@ -1,0 +1,110 @@
+YOLOv5 temporarily requires wandb version 0.12.10 or below. Some features may not work as expected.
+Overriding model.yaml nc=80 with nc=10
+                 from  n    params  module                                  arguments
+  0                -1  1      3520  models.common.Conv                      [3, 32, 6, 2, 2]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]
+  2                -1  1     18816  models.common.C3                        [64, 64, 1]
+  3                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+  4                -1  2    115712  models.common.C3                        [128, 128, 2]
+  5                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]
+  6                -1  3    625152  models.common.C3                        [256, 256, 3]
+  7                -1  1    885504  models.common.Conv                      [256, 384, 3, 2]
+  8                -1  1    665856  models.common.C3                        [384, 384, 1]
+  9                -1  1   1770496  models.common.Conv                      [384, 512, 3, 2]
+ 10                -1  1   1182720  models.common.C3                        [512, 512, 1]
+ 11                -1  1    656896  models.common.SPPF                      [512, 512, 5]
+ 12                -1  1    197376  models.common.Conv                      [512, 384, 1, 1]
+ 13                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 14           [-1, 8]  1         0  models.common.Concat                    [1]
+ 15                -1  1    813312  models.common.C3                        [768, 384, 1, False]
+ 16                -1  1     98816  models.common.Conv                      [384, 256, 1, 1]
+ 17                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 18           [-1, 6]  1         0  models.common.Concat                    [1]
+ 19                -1  1    361984  models.common.C3                        [512, 256, 1, False]
+ 20                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 21                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 22           [-1, 4]  1         0  models.common.Concat                    [1]
+ 23                -1  1     90880  models.common.C3                        [256, 128, 1, False]
+ 24                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]
+ 25          [-1, 20]  1         0  models.common.Concat                    [1]
+ 26                -1  1    296448  models.common.C3                        [256, 256, 1, False]
+ 27                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]
+ 28          [-1, 16]  1         0  models.common.Concat                    [1]
+ 29                -1  1    715008  models.common.C3                        [512, 384, 1, False]
+ 30                -1  1   1327872  models.common.Conv                      [384, 384, 3, 2]
+ 31          [-1, 12]  1         0  models.common.Concat                    [1]
+ 32                -1  1   1313792  models.common.C3                        [768, 512, 1, False]
+ 33  [23, 26, 29, 32]  1     57780  models.yolo.Detect                      [10, [[19, 27, 44, 40, 38, 94], [96, 68, 86, 152, 180, 137], [140, 301, 303, 264, 238, 542], [436, 615, 739, 380, 925, 792]], [128, 256, 384, 512]]
+Model summary: 355 layers, 12356980 parameters, 12356980 gradients, 16.4 GFLOPs
+Transferred 451/459 items from yolov5s6.pt
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1moptimizer:[39m[22m SGD(lr=0.01) with parameter groups 75 weight(decay=0.0), 79 weight(decay=0.0005), 79 bias
+[34m[1malbumentations: [39m[22mBlur(p=0.01, blur_limit=(3, 7)), MedianBlur(p=0.01, blur_limit=(3, 7)), ToGray(p=0.01), CLAHE(p=0.01, clip_limit=(1, 4.0), tile_grid_size=(8, 8))
+[34m[1mtrain: [39m[22mScanning '/scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/labels.cache' images and labels... 7897 found, 0 missing, 109 empty, 0 corrupt: 100% 7897/7897 [00:00<?, ?it/s]
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/01c4035b-bcaeb067_353c68ef-d95e98bb_9a58e8e4-4b400dc1_1033005c-8c97322c.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/022ec367-cb18e652_9dca7bcd-8d689e1a_9a58e8e4-4b400dc1_20c18a94-4fee0000.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/076399f2-4c68835b_0b79446c-48c74eea_9a58e8e4-4b400dc1_a3e8ca14-4af4e43e.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/0dca1cba-00000000.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/0e5016e5-00000000.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/1033005c-8c97322c_00e9be89-00001345_9a58e8e4-4b400dc1_065a3868-00000000.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/18ee4d7a-00000000.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/1b296d94-e8224154_1033005c-8c97322c_9a58e8e4-4b400dc1_022ec367-cb18e652.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/1d6b8476-00000000.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/1e68a7dc-e3394c1e.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/21df6903-00000000.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/32613e1b-00000000.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/3e4e15ac-44fa6195_353c68ef-d95e98bb_9a58e8e4-4b400dc1_84cb906a-022677e1.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/419ed58d-00000000.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/4411f74d-00000000.jpg: 2 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/46630cfc-00000000.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/48ad9d98-3416dd20.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/56c60142-6a3a05a6_26ed798f-d636d1c4_9a58e8e4-4b400dc1_20c18a94-4fee0000.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/638a000d-00000000.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/655ff376-00000000.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/872b83f1-12137e15.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/8b1a2101-91828523.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/8dab29d7-184dd4bf_26ed798f-d636d1c4_9a58e8e4-4b400dc1_52c0315c-51a50637.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/9a58e8e4-4b400dc1.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/9a58e8e4-4b400dc1_00e9be89-00001290_92e34598-8184fbf0_b4b68779-1c75351a.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/9a58e8e4-4b400dc1_065a3868-00000000_0bcc752f-fd302777_1033005c-8c97322c.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/9a58e8e4-4b400dc1_1215f91d-db7a0000_bbeefd23-dbf4d60e_33ac83ac-3f0d3a59.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/9a58e8e4-4b400dc1_2736fdaf-6588c969_a3e8ca14-4af4e43e_6d369981-9cdac3e4.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/9a58e8e4-4b400dc1_33ac83ac-3f0d3a59_56c60142-6a3a05a6_92e34598-8184fbf0.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/9a58e8e4-4b400dc1_5b3af830-bcdc5f4d_92e34598-8184fbf0_bf261d80-f339c048.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/9a58e8e4-4b400dc1_8dab29d7-184dd4bf_5b3af830-bcdc5f4d_7c2090bd-7b48705f.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/9a58e8e4-4b400dc1_9d7e33d3-36c05b13_1f2942b6-1cec2edf_bbeefd23-dbf4d60e.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/9a58e8e4-4b400dc1_9dca7bcd-8d689e1a_ad9f6825-a15140d0_2736fdaf-6588c969.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/9a58e8e4-4b400dc1_a3e8ca14-4af4e43e_bbeefd23-dbf4d60e_076399f2-4c68835b.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/9a58e8e4-4b400dc1_ad9f6825-a15140d0_1033005c-8c97322c_0bcc752f-fd302777.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/9dca7bcd-8d689e1a_9a58e8e4-4b400dc1_92e34598-8184fbf0_0b79446c-48c74eea.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/ad9f6825-a15140d0_84cb906a-022677e1_9a58e8e4-4b400dc1_1b296d94-e8224154.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/b2d22b2f-8302eb61.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/train_org_trainmosaic/images/b4b68779-1c75351a_73fd9d6f-ba1ccb6d_56c60142-6a3a05a6_9a58e8e4-4b400dc1.jpg: 1 duplicate labels removed
+
+
+
+
+
+[34m[1mtrain: [39m[22mCaching images (21.8GB ram): 100% 7897/7897 [00:10<00:00, 759.32it/s]
+[34m[1mval: [39m[22mScanning '/scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/val/labels.cache' images and labels... 1000 found, 0 missing, 19 empty, 0 corrupt: 100% 1000/1000 [00:00<?, ?it/s]
+[34m[1mval: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/val/images/898ac5b9-00000000.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/val/images/a4455970-00000000.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING: /scratch/ichakr2s/yolov5pytorch_aug/mosaic_bdd10k/Mosaic_Aug/val/images/ab309345-00000000.jpg: 1 duplicate labels removed
+
+[34m[1mval: [39m[22mCaching images (2.8GB ram): 100% 1000/1000 [00:01<00:00, 588.30it/s]
+[34m[1mAutoAnchor: [39m[22m4.05 anchors/target, 0.966 Best Possible Recall (BPR). Anchors are a poor fit to dataset ⚠️, attempting to improve...
+[34m[1mAutoAnchor: [39m[22mWARNING: Extremely small objects found: 680 of 108109 labels are < 3 pixels in size
+[34m[1mAutoAnchor: [39m[22mRunning kmeans for 12 anchors on 107971 points...
+
+
+[34m[1mAutoAnchor: [39m[22mEvolving anchors with Genetic Algorithm: fitness = 0.7504: 100% 1000/1000 [00:05<00:00, 189.55it/s]
+[34m[1mAutoAnchor: [39m[22mthr=0.25: 0.9917 best possible recall, 6.33 anchors past thr
+[34m[1mAutoAnchor: [39m[22mn=12, img_size=1280, metric_all=0.317/0.750-mean/best, past_thr=0.487-mean: 12,10, 20,18, 15,39, 32,24, 42,34, 34,83, 65,47, 91,68, 135,97, 198,134, 299,216, 417,323
+[34m[1mAutoAnchor: [39m[22mDone ✅ (optional: update model *.yaml to use these anchors in the future)
+Plotting labels to runs/train/exp30/labels.jpg...
+Image sizes 1280 train, 1280 val
+Using 8 dataloader workers
+Logging results to [1mruns/train/exp30
+Starting training for 300 epochs...
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+  0% 0/124 [00:01<?, ?it/s]
