@@ -8,8 +8,8 @@ from shapely.geometry import Polygon
 # create directory and directory structure for IS data augmentation
 def dir_category_create(is_location, directory):
     """
-        Function takes parent directory location where directory structure
-        and child directories will be created.
+        Function takes parent directory location where child directories 
+        will be created.
 
         Parameters
         ----------
@@ -24,20 +24,81 @@ def dir_category_create(is_location, directory):
     if not os.path.exists(is_location + directory):
         os.makedirs(is_location + directory)
 
+# clip normalized parameters in yolov5pytorchtxt file (required for training)
 def clip(param):
+    """
+        Function takes parameter value and clips it to 0.9999 if greater than 1.0
+
+        Parameters
+        ----------
+        param: value to clip <type:float> 
+        
+        Returns
+        -------
+        param: clipped value <= 1.0 <type:float>
+
+        Raises
+        ------
+    """
     if param > 1.0:
         return 0.9999
     else:
         return param
 
+# create image in location
 def write_synth_img(img_name, output_location, image, category):
+    """
+        Function takes image name, output location, image and instance category
+        to create image in location with tailored name
+
+        Parameters
+        ----------
+        img_name: name for the image <type:str>
+        output_location: directory location to save image <type:str>
+        image: image to be saved <type:str>
+        category: category of the instance <type:str>
+        
+        Returns
+        -------
+        image file
+
+        Raises
+        ------
+    """
     cv2.imwrite(output_location + 'train/images/' + category + '/' + img_name + '.jpg', image)
 
 def make_label(file_name_str, train_img, bdd10k_category_list, img_width, img_height, output_location, category):
+    """
+        Function takes file name, image, category_list, image width, 
+        image height, output location, category to make label txt file 
+        in yolov5pytorchtxt format
+
+        Parameters
+        ----------
+        file_name_str: file name <type:str>
+        train_img: image json <type:json>
+        bdd10k_category_list: category list <type:list>
+        img_width: width of image <type:int>
+        img_height: height of image <type:int>
+        output_location: parent directory location to save label <type:str>
+        category: category of instance <type:str>
+        
+        Returns
+        -------
+        .txt label file
+
+        Raises
+        ------
+    """
     strinG = ''
+    # each instance annotation in image file
     for label in train_img['labels']:
+        # polygon object of the object
         poly = Polygon(label['poly2d'][0]['vertices'])
+        # category index number of the instance label as per the category list
         cat = bdd10k_category_list.index(label['category'])
+        # yolov5pytorchtxt format based label name <class_id center_x center_y width height>
+        # where fields are space delimited, and the coordinates are normalized from zero to one 
         centr_xy =  poly.centroid.xy
         centr_x = centr_xy[0][0]/img_width
         centr_y = centr_xy[1][0]/img_height
@@ -47,20 +108,49 @@ def make_label(file_name_str, train_img, bdd10k_category_list, img_width, img_he
     with open(output_location + 'train/labels/' + category + '/' + file_name_str + '.txt' , 'w') as f:
         f.write(strinG)
 
-def swap(i1, i2, idx_1_2, swap_idx, train_location):
+def swap(i1, i2, swap_idx, train_location):
+    """
+        Function takes annotation of image pair i1 and i2, along with swappable indices 
+        of i1 and i2 and train location
+
+        Parameters
+        ----------
+        i1: image 1 annotations <type:json>
+        i2: image 2 annotations <type:json>
+        swap_idx: list of indices to swap <type:list>
+        train_location: location of train images <type:str>
+        
+        Returns
+        -------
+        swapped_1: 
+        swapped_2: 
+
+        Raises
+        ------
+    """
+
+    # read image 
     image1 = cv2.imread(train_location + i1['name'])
-    annot1 = i1['labels'][idx_1_2[swap_idx][0]]
+    # extract annotations of image 1 and annotation of image 1 which must be swapped
+    annot1 = i1['labels'][swap_idx[0]]
+    # extract vertices of instance
     roi_corners1 = np.array([annot1['poly2d'][0]['vertices']], dtype=np.int32)
+    # extract minx, miny, maxx, maxy of the vertices
     xmin1 = np.min(roi_corners1[0][:,0])
     xmax1 = np.max(roi_corners1[0][:,0])
     ymin1 = np.min(roi_corners1[0][:,1])
     ymax1 = np.max(roi_corners1[0][:,1])
+    # 
     roi_mean1 = np.array([(xmax1+xmin1)/2, (ymax1+ymin1)/2])
     roi_norm1 = roi_corners1[0] - roi_mean1
     
+    # read image 
     image2 = cv2.imread(train_location + i2['name'])
-    annot2 = i2['labels'][idx_1_2[swap_idx][1]]
+    # extract annotations of image 2 and annotation of image 2 which must be swapped
+    annot2 = i2['labels'][swap_idx[1]]
+    # extract vertices of instance
     roi_corners2 = np.array([annot2['poly2d'][0]['vertices']], dtype=np.int32)
+    # extract minx, miny, maxx, maxy of the vertices
     xmin2 = np.min(roi_corners2[0][:,0])
     xmax2 = np.max(roi_corners2[0][:,0])
     ymin2 = np.min(roi_corners2[0][:,1])
