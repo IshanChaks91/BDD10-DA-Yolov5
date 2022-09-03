@@ -84,7 +84,7 @@ if __name__ == "__main__":
     for cat in category_bdd10:
         names += cat + "', '" 
 
-    # 
+    # create directory location for augmented images
     for cat in category_bdd10:
 
         mosaic_utils.dir_category_create(mosaic_location + 'train/images/', cat)
