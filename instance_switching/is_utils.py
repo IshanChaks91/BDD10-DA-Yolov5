@@ -131,7 +131,7 @@ def swap(i1, i2, swap_idx, train_location):
 
     # read image 
     image1 = cv2.imread(train_location + i1['name'])
-    # extract annotations of image 1 and annotation of image 1 which must be swapped
+    # extract annotations of instance of image 1 which must be swapped
     annot1 = i1['labels'][swap_idx[0]]
     # extract vertices of instance
     roi_corners1 = np.array([annot1['poly2d'][0]['vertices']], dtype=np.int32)
@@ -146,7 +146,7 @@ def swap(i1, i2, swap_idx, train_location):
     
     # read image 
     image2 = cv2.imread(train_location + i2['name'])
-    # extract annotations of image 2 and annotation of image 2 which must be swapped
+    # extract annotations of instance of image 2 which must be swapped
     annot2 = i2['labels'][swap_idx[1]]
     # extract vertices of instance
     roi_corners2 = np.array([annot2['poly2d'][0]['vertices']], dtype=np.int32)
@@ -158,9 +158,12 @@ def swap(i1, i2, swap_idx, train_location):
     roi_mean2 = np.array([(xmax2+xmin2)/2, (ymax2+ymin2)/2])
     roi_norm2 = roi_corners2[0] - roi_mean2
 
+    # create white mask of image size
     mask1 = np.ones(image1.shape, dtype=np.uint8)
     mask1.fill(255)
+    # fill with shape of instance 1 of black pixels, on white mask at instance 1 location 
     cv2.fillPoly(mask1, roi_corners1, 0)
+    # 
     masked_image1 = cv2.bitwise_or(image1, mask1)    
     masking_obj1 = masked_image1[ymin1:ymax1, xmin1:xmax1]    
     masked_image1 = np.ones(image2.shape, dtype=np.uint8)
