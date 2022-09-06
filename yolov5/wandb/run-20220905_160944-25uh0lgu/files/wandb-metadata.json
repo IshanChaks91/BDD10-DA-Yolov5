@@ -1,0 +1,42 @@
+{
+    "os": "Linux-3.10.0-1160.76.1.el7.x86_64-x86_64-with-glibc2.10",
+    "python": "3.8.1",
+    "heartbeatAt": "2022-09-05T14:09:46.386787",
+    "startedAt": "2022-09-05T14:09:44.927124",
+    "docker": null,
+    "gpu": "Tesla V100-PCIE-16GB",
+    "gpu_count": 1,
+    "cpu_count": 64,
+    "cuda": null,
+    "args": [
+        "--img",
+        "1280",
+        "--batch",
+        "16",
+        "--epochs",
+        "300",
+        "--seed",
+        "3000",
+        "--patience",
+        "50",
+        "--hyp",
+        "/home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/data/hyps/hyp.scratch-low.yaml",
+        "--data",
+        "/scratch/ichakr2s/yolov5pytorch_aug/is_bdd10k/IS_Aug/data.yaml",
+        "--weights",
+        "yolov5s6.pt",
+        "--cache"
+    ],
+    "state": "running",
+    "program": "/home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5/yolov5/train.py",
+    "codePath": "yolov5/train.py",
+    "git": {
+        "remote": "git@github.com:IshanChaks91/BDD10-DA-Yolov5.git",
+        "commit": "b169949edf677ed97571276ecc0ca08c6dcd9e92"
+    },
+    "email": "ishan.chakravorty@gmail.com",
+    "root": "/home/ichakr2s/my_projects/BDD10k_Data_Augmentaion/BDD10-DA-Yolov5",
+    "host": "wr16",
+    "username": "ichakr2s",
+    "executable": "/home/ichakr2s/anaconda3/envs/BDD10-DA-Yolov5/bin/python3"
+}

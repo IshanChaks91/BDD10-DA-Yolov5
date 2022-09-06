@@ -3,6 +3,21 @@ wandb_version: 1
 _wandb:
   desc: null
   value:
+    bounding_box/class_labels:
+      BoundingBoxDebugger_wandb_delimeter_predictions:
+        key: BoundingBoxDebugger_wandb_delimeter_predictions
+        type: bounding_box/class_labels
+        value:
+          '0': car
+          '1': person
+          '2': truck
+          '3': bus
+          '4': bicycle
+          '5': rider
+          '6': trailer
+          '7': motorcycle
+          '8': caravan
+          '9': train
     cli_version: 0.12.21
     framework: torch
     is_jupyter_run: false
@@ -14,7 +29,15 @@ _wandb:
       - 1
       - 41
       - 55
+      2:
+      - 1
+      - 5
+      - 41
+      - 53
+      - 55
+      - 80
       3:
+      - 2
       - 16
       4: 3.8.1
       5: 0.12.21
