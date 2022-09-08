@@ -140,8 +140,10 @@ def swap(i1, i2, swap_idx, train_location):
     xmax1 = np.max(roi_corners1[0][:,0])
     ymin1 = np.min(roi_corners1[0][:,1])
     ymax1 = np.max(roi_corners1[0][:,1])
-    # 
+    # find mean of all vertices of instance
     roi_mean1 = np.array([(xmax1+xmin1)/2, (ymax1+ymin1)/2])
+    # find norm values of all vertives of instance (norm is instance centered
+    # at origin of image instead of center of instance)
     roi_norm1 = roi_corners1[0] - roi_mean1
     
     # read image 
@@ -155,28 +157,45 @@ def swap(i1, i2, swap_idx, train_location):
     xmax2 = np.max(roi_corners2[0][:,0])
     ymin2 = np.min(roi_corners2[0][:,1])
     ymax2 = np.max(roi_corners2[0][:,1])
+    # find mean of all vertices of instance
     roi_mean2 = np.array([(xmax2+xmin2)/2, (ymax2+ymin2)/2])
+    # find norm values of all vertives of instance (norm is instance centered
+    # at origin of image instead of center of instance)
     roi_norm2 = roi_corners2[0] - roi_mean2
 
+    # process to cut and paste instance mask from image 1 into image 2 after resizing
     # create white mask of image size
     mask1 = np.ones(image1.shape, dtype=np.uint8)
     mask1.fill(255)
     # fill with shape of instance 1 of black pixels, on white mask at instance 1 location 
     cv2.fillPoly(mask1, roi_corners1, 0)
-    # 
-    masked_image1 = cv2.bitwise_or(image1, mask1)    
-    masking_obj1 = masked_image1[ymin1:ymax1, xmin1:xmax1]    
+    # apply bitwise_or to the white image with only mask object highlighted
+    masked_image1 = cv2.bitwise_or(image1, mask1)
+    # extract mask of the instance of image 1 
+    masking_obj1 = masked_image1[ymin1:ymax1, xmin1:xmax1]
+    # create a new white template image of image 2 size    
     masked_image1 = np.ones(image2.shape, dtype=np.uint8)
     masked_image1.fill(255)
+    # resize mask of instance in image 1 to size of instance in image 2 (paste destination)
     masking_obj1 = cv2.resize(masking_obj1, (xmax2-xmin2, ymax2-ymin2), interpolation = cv2.INTER_AREA)
+    # paste the resized mask in the template of image 2 at location of instance in image 2
     masked_image1[ymin2:ymax2, xmin2:xmax2] = masking_obj1
+    # vertices of normalized mask of instance of image 1
     img2_mask = np.vstack((((xmax2-xmin2)/float(xmax1-xmin1))*roi_norm1[:,0], ((ymax2-ymin2)/float(ymax1-ymin1))*roi_norm1[:,1])).T
+    # white template of image 2
     mask2 = np.ones(image2.shape, dtype=np.uint8)
     mask2.fill(255)
-    cv2.fillPoly(mask2, np.array([img2_mask+roi_mean2], dtype=np.int), 0)   
+    # fill with black in the mask area of instance of image 2
+    cv2.fillPoly(mask2, np.array([img2_mask+roi_mean2], dtype=np.int), 0)
+    # black out all the template but leave the mask area of instance of image 2 as white
     mask2 = 255 - mask2
+    # apply guassian blurring on the borders of the mask
     mask2 = cv2.blur(mask2,(5,5))
+    # apply bitwise_or of the above template with image 2 to remove instance of image 2
+    # from the image
     masked_image2 = cv2.bitwise_or(image2, mask2)
+    # apply bitwise_and to paste the resized instance mask of image 1 (moved to location of 
+    # instance of image 2) into the empty area of instance of image 2
     swapped_1 = cv2.bitwise_and(masked_image1, masked_image2)
     
     mask2 = np.ones(image2.shape, dtype=np.uint8)
