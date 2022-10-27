@@ -106,7 +106,7 @@ def main():
                     print('Warning while swapping.')
 
 if __name__=="__main__":
-    # read annotation json fro train images
+    # read annotation json from train images
     with open(annotation_location + 'ins_seg_train.json', 'r') as f:
         bdd_data = json.load(f)
     # category list of all instances
