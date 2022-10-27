@@ -32,7 +32,7 @@ area_thresh = img_width * img_height * scale_factor
 def main():
     # for each category (!=car) in the instance category list
     for cat in bdd10k_category_list:
-        if cat != 'car':
+        if cat == 'person':
             # find all images for this category (image contains all of its annotation data)
             file_names = []
             for idx in range(len(bdd_data)):
